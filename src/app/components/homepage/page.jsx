@@ -3,6 +3,7 @@ import Spotlight from '../spotlight/page';
 
 function HomePage() {
   return (
+    
       <div>
           <Spotlight/>
     </div>
