@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.wrapper {
+    width: 90%;
+    margin: 0 auto;
+    max-width: 1480px;
+}
+
+body {
+    background-color: black;
+    color: white;
+}
