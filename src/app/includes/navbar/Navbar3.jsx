@@ -3,7 +3,7 @@ import React from "react";
 
 function Navbar3() {
     return (
-        <div className="bg-[#333] py-2">
+        <div className="bg-[#1A1A1A] sticky top[90px] py-2">
             <div className="wrapper flex items-center justify-between w-full h-[60px] ">
                 <div className="flex items-center">
                     <ul className="text-[#EEEEEE] flex items-center gap-5 text-[15px]">

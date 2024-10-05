@@ -4,7 +4,7 @@ import { IoMdArrowDropdown } from "react-icons/io";
 
 function NavbarBottom() {
     return (
-        <div className="bg-[#000] sticky top-0">
+        <div className="bg-[#000] sticky top-0 z-20 ">
             <div className="wrapper flex items-center py-4 gap-[25px] ">
                 <div className="">
                     <h2 className="text-[28px] ">Artificial Intelligence</h2>

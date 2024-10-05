@@ -5,7 +5,7 @@ import { MdSearch } from "react-icons/md";
 
 function NavbarTop() {
     return (
-        <div className="bg-[#fff]">
+        <div className="bg-[#fff] sticky top-0 ">
             <div className="wrapper flex items-center justify-between">
                 <div className="left w-[250px] flex items-center ">
                     <h1 className="w-[120px]">

@@ -1,4 +1,5 @@
 import React from "react";
+import { MdKeyboardArrowRight } from "react-icons/md";
 
 function Integrations() {
     return (
@@ -40,9 +41,10 @@ function Integrations() {
                             LlamaIndex, and easily integrate the latest AI
                             models in your applications.
                         </p>
-                        <h5 className="font-bold text-[18px]">
+                        <h5 className="font-bold text-[18px] flex items-center">
                             Learn More About Building With These Tools and
-                            NVIDIA NIM
+                            NVIDIA NIM{" "}
+                            <MdKeyboardArrowRight size={30} color="#76B900" />
                         </h5>
                     </div>
                     <div className="w-[1/2]">
@@ -64,10 +66,17 @@ function Integrations() {
                             code, customization instructions, and a Helm chart
                             for deployment.
                         </p>
-                        <h6 className="text-[18px] font-bold">Learn More</h6>
-                        <h6 className="text-[18px] font-bold mt-[10px]">Try Now</h6>
+                        <h6 className="text-[18px] font-bold flex items-center">
+                            Learn More{" "}
+                            <MdKeyboardArrowRight size={30} color="#76B900" />
+                        </h6>
+                        <h6 className="text-[18px] font-bold mt-[10px] flex items-center">
+                            Try Now{" "}
+                            <MdKeyboardArrowRight size={30} color="#76B900" />
+                        </h6>
                     </div>
                 </div>
+                <div className="w-full border-[1px] border-[#202020] mt-[30px]"></div>
             </div>
         </div>
     );
