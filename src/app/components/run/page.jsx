@@ -166,7 +166,7 @@ function Run() {
                             Fine-Tune With NVIDIA NeMo
                         </h2>
                         <p className="text-[15px] leading-6 mt-[10px]">
-                            NVIDIA NeMo™ is an end-to-end platform for
+                           <span className="border-b-[2px] border-b-[#76B900]">NVIDIA NeMo™</span>  is an end-to-end platform for
                             developing custom generative AI anywhere. It
                             includes tools for training, customization and
                             retrieval-augmented generation (RAG), guardrailing,
@@ -174,8 +174,13 @@ function Run() {
                             enterprises an easy, cost-effective, and fast way to
                             adopt generative AI.
                         </p>
-                        <h5 className="mt-[20px] font-bold text-[18px]">Read Technical Blog</h5>
-                        <h5 className="mt-[10px] font-bold text-[18px]">Get Started With Tutorials</h5>
+                        <h5 className="mt-[20px] font-bold text-[18px] flex items-center">
+                            Read Technical Blog{" "}
+                            <MdKeyboardArrowRight className="text-[#768900]" size={30} />
+                        </h5>
+                        <h5 className="mt-[10px] font-bold text-[18px] flex items-center">
+                            Get Started With Tutorials <MdKeyboardArrowRight size={30} className="text-[#768900]"/>
+                        </h5>
                     </div>
                     <div className="w-1/2">
                         <img src="/images/img5.jpeg" />
