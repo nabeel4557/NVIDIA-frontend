@@ -6,6 +6,8 @@ import Run from '../run/page';
 import GetStarted from '../getstarted/page';
 import Case from '../case/page';
 import Ecosystem from '../ecosystem/page';
+import Resources from '../resources/page';
+
 
 function HomePage() {
   return (
@@ -18,6 +20,8 @@ function HomePage() {
           <GetStarted/>
           <Case/>
           <Ecosystem/>
+          <Resources/>
+          
           
     </div>
   )
