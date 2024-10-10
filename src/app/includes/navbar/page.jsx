@@ -5,7 +5,8 @@ import NavbarBottom from './NavbarBottom';
 function Navbar() {
   return (
     <div>
-          <NavbarTop />
+      <NavbarTop />
+      <NavbarBottom/>
     </div>
   )
 }

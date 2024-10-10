@@ -7,6 +7,7 @@ import GetStarted from '../getstarted/page';
 import Case from '../case/page';
 import Ecosystem from '../ecosystem/page';
 import Resources from '../resources/page';
+import Documentation from '../documentation/page';
 
 
 function HomePage() {
@@ -21,6 +22,7 @@ function HomePage() {
           <Case/>
           <Ecosystem/>
           <Resources/>
+          <Documentation/>
           
           
     </div>

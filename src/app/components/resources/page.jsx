@@ -13,7 +13,7 @@ function Resources() {
                   Unlock, Upskill, and Upscale
               </h2>
               <div className="w-full flex items-center gap-4 mt-[40px]">
-                  <div className="w-1/4 bg-[#fff] h-[530px] relative pb-[30px] shadow-lg">
+                  <div className="w-1/4 bg-[#fff] h-[580px] relative pb-[30px] shadow-lg">
                       <div className="w-full">
                           <img src="/images/img12.jpeg" />
                       </div>
@@ -21,7 +21,7 @@ function Resources() {
                           <h6 className="text-[15px] font-bold text-[#000]">
                               NVIDIA LaunchPad
                           </h6>
-                          <h3 className="text-[24px] font-bold text-[#000]">
+                          <h3 className="text-[24px] font-bold text-[#000] my-[30px]">
                               Unlock AI With a Hands-On Lab
                           </h3>
                           <p className="text-[#1A1A1A] text-[15px]">
@@ -36,7 +36,7 @@ function Resources() {
                           </h6>
                       </div>
                   </div>
-                  <div className="w-1/4 bg-[#fff] h-[530px] relative pb-[30px] shadow-lg">
+                  <div className="w-1/4 bg-[#fff] h-[580px] relative pb-[30px] shadow-lg">
                       <div className="w-full">
                           <img src="/images/img13.jpeg" />
                       </div>
@@ -44,7 +44,7 @@ function Resources() {
                           <h6 className="text-[15px] font-bold text-[#000]">
                               NVIDIA Developer Program
                           </h6>
-                          <h3 className="text-[24px] font-bold text-[#000]">
+                          <h3 className="text-[24px] font-bold text-[#000] my-[30px]">
                               Accelerate Your AI Applications
                           </h3>
                           <p className="text-[#1A1A1A] text-[15px]">
@@ -59,7 +59,7 @@ function Resources() {
                           </h6>
                       </div>
                   </div>
-                  <div className="w-1/4 bg-[#fff] h-[530px] relative pb-[30px] shadow-lg">
+                  <div className="w-1/4 bg-[#fff] h-[580px] relative pb-[30px] shadow-lg">
                       <div>
                           <img src="/images/img14.jpeg" />
                       </div>
@@ -67,10 +67,10 @@ function Resources() {
                           <h6 className="text-[15px] font-bold text-[#000]">
                               AI Workbench
                           </h6>
-                          <h3 className="text-[24px] font-bold text-[#000]">
+                          <h3 className="text-[24px] font-bold text-[#000] my-[30px]">
                               Start Small. Scale Big
                           </h3>
-                          <p className="text-[#1A1A1A] text-[15px]">
+                          <p className="text-[#1A1A1A] text-[15px] ">
                               Get free access to NIM for application
                               development, research, and testing plus technical
                               learning resources through the NVIDIA Developer
@@ -82,7 +82,7 @@ function Resources() {
                           </h6>
                       </div>
                   </div>
-                  <div className="w-1/4 bg-[#fff] h-[530px] relative pb-[30px] shadow-lg">
+                  <div className="w-1/4 bg-[#fff] h-[580px] relative pb-[30px] shadow-lg">
                       <div>
                           <img src="/images/img15.jpeg" />
                       </div>
