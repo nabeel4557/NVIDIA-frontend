@@ -12,7 +12,7 @@ function NavbarBottom() {
                 <div className="flex items-center ">
                     <ul className="flex items-center text-[16px] gap-[25px] mt-2 text-[#999999]">
                         <li>
-                            <Link href="#">Industries</Link>
+                            <Link href="/industries">Industries</Link>
                         </li>
                         <li className="flex items-center gap-2">
                             <Link href="#">Solutions</Link>
