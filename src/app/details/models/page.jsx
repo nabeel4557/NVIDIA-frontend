@@ -37,31 +37,34 @@ function Models() {
                                 <Link
                                     href={{
                                         pathname: `/details/models/${model.id}`,
-                                    }}
-                                    >
-                                    <img
-                                        src={model.image}
-                                        className="rounded-[10px] hover:border-[3px] hover:border-[#76B900] hover:opacity-50"
-                                        alt={model.name}
-                                    />
+                                    }}>
+                                    <div>
+                                        <img
+                                            src={model.image}
+                                            className="rounded-[10px] hover:border-[3px] hover:border-[#76B900] hover:opacity-50"
+                                            alt={model.name}
+                                        />
+                                    </div>
+                                    <div className="absolute top-5 px-[20px]">
+                                        <span className="text-[10px] bg-[#DEBAEB] text-[#5A066D] py-[4px] px-[8px] rounded-[5px]">
+                                            RUN ANYWHERE
+                                        </span>
+                                        <div className="mt-[40px]">
+                                            <span className="text-[14px]">
+                                                meta
+                                            </span>
+                                            <h5 className="text-[18px] font-bold">
+                                                {model.name}
+                                            </h5>
+                                            <span className="px-[5px] py-[2px] rounded-[10px] bg-[#f2f2f299] text-[12px] text-[#121212] mr-2">
+                                                synthetic data generation
+                                            </span>
+                                            <span className="px-[5px] py-[2px] rounded-[10px] bg-[#f2f2f299] text-[12px] text-[#121212]">
+                                                chat
+                                            </span>
+                                        </div>
+                                    </div>
                                 </Link>
-                            </div>
-                            <div className="absolute top-5 px-[20px]">
-                                <span className="text-[10px] bg-[#DEBAEB] text-[#5A066D] py-[4px] px-[8px] rounded-[5px]">
-                                    RUN ANYWHERE
-                                </span>
-                                <div className="mt-[40px]">
-                                    <span className="text-[14px]">meta</span>
-                                    <h5 className="text-[18px] font-bold">
-                                        {model.name}
-                                    </h5>
-                                    <span className="px-[5px] py-[2px] rounded-[10px] bg-[#f2f2f299] text-[12px] text-[#121212] mr-2">
-                                        synthetic data generation
-                                    </span>
-                                    <span className="px-[5px] py-[2px] rounded-[10px] bg-[#f2f2f299] text-[12px] text-[#121212]">
-                                        chat
-                                    </span>
-                                </div>
                             </div>
                         </div>
                     ))}
