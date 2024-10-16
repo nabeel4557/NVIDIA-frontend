@@ -1,42 +1,128 @@
 import Link from "next/link";
-import React from "react";
+import React, { useState } from "react";
 
 function Navbar3() {
+    const [activeLink, setActiveLink] = useState("");
+
+    const handleClick = (link) => {
+        setActiveLink(link);
+    };
+
     return (
-        <div className="bg-[#1A1A1A] sticky top[90px] py-2">
+        <div className="bg-[#1A1A1A] sticky top-[90px] py-2">
             <div className="wrapper flex items-center justify-between w-full h-[60px] ">
                 <div className="flex items-center">
                     <ul className="text-[#EEEEEE] flex items-center gap-5 text-[15px]">
                         <li>
-                            <Link href="#">Models</Link>
+                            <Link
+                                href="#models"
+                                scroll={true}
+                                className={`${
+                                    activeLink === "#models"
+                                        ? "border-b-2 border-[#76b900] p-6"
+                                        : ""
+                                }`}
+                                onClick={() => handleClick("#models")}>
+                                Models
+                            </Link>
                         </li>
                         <li>
-                            <Link href="#">Integrations</Link>
+                            <Link
+                                href="#integrations"
+                                scroll={true}
+                                className={`${
+                                    activeLink === "#integrations"
+                                        ? "border-b-2 border-[#76b900] p-6"
+                                        : ""
+                                }`}
+                                onClick={() => handleClick("#integrations")}>
+                                Integrations
+                            </Link>
                         </li>
                         <li>
-                            <Link href="#">Run Anywhere</Link>
+                            <Link
+                                href="#run"
+                                scroll={true}
+                                className={`${
+                                    activeLink === "#run"
+                                        ? "border-b-2 border-[#76b900] p-6"
+                                        : ""
+                                }`}
+                                onClick={() => handleClick("#run")}>
+                                Run Anywhere
+                            </Link>
                         </li>
                         <li>
-                            <Link href="#">Get Started</Link>
+                            <Link
+                                href="#get-started"
+                                scroll={true}
+                                className={`${
+                                    activeLink === "#get-started"
+                                        ? "border-b-2 border-[#76b900] p-6"
+                                        : ""
+                                }`}
+                                onClick={() => handleClick("#get-started")}>
+                                Get Started
+                            </Link>
                         </li>
                         <li>
-                            <Link href="#">Use Cases</Link>
+                            <Link
+                                href="#case"
+                                scroll={true}
+                                className={`${
+                                    activeLink === "#case"
+                                        ? "border-b-2 border-[#76b900] p-6"
+                                        : ""
+                                }`}
+                                onClick={() => handleClick("#case")}>
+                                Use Cases
+                            </Link>
                         </li>
                         <li>
-                            <Link href="#">Ecosystem</Link>
+                            <Link
+                                href="#ecosystem"
+                                scroll={true}
+                                className={`${
+                                    activeLink === "#ecosystem"
+                                        ? "border-b-2 border-[#76b900] p-6"
+                                        : ""
+                                }`}
+                                onClick={() => handleClick("#ecosystem")}>
+                                Ecosystem
+                            </Link>
                         </li>
                         <li>
-                            <Link href="#">Resources</Link>
+                            <Link
+                                href="#resources"
+                                scroll={true}
+                                className={`${
+                                    activeLink === "#resources"
+                                        ? "border-b-2 border-[#76b900] p-6"
+                                        : ""
+                                }`}
+                                onClick={() => handleClick("#resources")}>
+                                Resources
+                            </Link>
                         </li>
                         <li>
-                            <Link href="#">Docs</Link>
+                            <Link
+                                href="#documentation"
+                                scroll={true}
+                                className={`${
+                                    activeLink === "#documentation"
+                                        ? "border-b-2 border-[#76b900] p-6"
+                                        : ""
+                                }`}
+                                onClick={() => handleClick("#documentation")}>
+                                Docs
+                            </Link>
                         </li>
                     </ul>
                 </div>
                 <div>
-                    <buttton className="text-black bg-[#76b900] text-[18px] py-[13px] px-[15px] border-none font-bold">
+                    <button className="text-black bg-[#76b900] text-[18px] py-[13px] px-[15px] border-none font-bold">
                         Try Now
-                    </buttton>
+                    </button>
                 </div>
             </div>
         </div>

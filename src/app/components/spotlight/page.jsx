@@ -1,4 +1,4 @@
-import Navbar3 from "@/app/includes/navbar/Navbar3";
+import Navbar3 from "../../includes/navbar/Navbar3";
 import React from "react";
 import { FiPlay } from "react-icons/fi";
 

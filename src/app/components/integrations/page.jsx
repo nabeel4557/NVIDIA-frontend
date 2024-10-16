@@ -43,7 +43,7 @@ function Integrations() {
                         </p>
                         <h5 className="font-bold text-[18px] flex items-center">
                             Learn More About Building With These Tools and
-                            NVIDIA NIM{" "}
+                            NVIDIA NIM
                             <MdKeyboardArrowRight size={30} color="#76B900" />
                         </h5>
                     </div>

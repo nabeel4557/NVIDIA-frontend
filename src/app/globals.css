@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+
+html {
+    scroll-behavior: smooth;
+}
 .wrapper {
     width: 90%;
     margin: 0 auto;

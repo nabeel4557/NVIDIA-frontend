@@ -1,4 +1,3 @@
-import Navbar3 from "@/app/includes/navbar/Navbar3";
 import Link from "next/link";
 import React from "react";
 
@@ -35,7 +34,34 @@ function Ai() {
             </div>
 
             <div>
-                <Navbar3 />
+                <div className="bg-[#1A1A1A] sticky top[90px] py-2">
+                    <div className="wrapper flex items-center justify-between w-full h-[60px] ">
+                        <div className="flex items-center">
+                            <ul className="text-[#EEEEEE] flex items-center gap-5 text-[15px]">
+                                <li>
+                                    <Link href="#">Overview</Link>
+                                </li>
+                                <li>
+                                    <Link href="#">Solutions</Link>
+                                </li>
+                                <li>
+                                    <Link href="#">Use Cases</Link>
+                                </li>
+                                <li>
+                                    <Link href="#">Resources</Link>
+                                </li>
+                                <li>
+                                    <Link href="#">Next Steps</Link>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <button className="text-black bg-[#76b900] text-[18px] py-[13px] px-[15px] border-none font-bold">
+                                Try Now
+                            </button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div className="w-full py-[75px] bg-[#fff]">
                 <div className="wrapper ">
