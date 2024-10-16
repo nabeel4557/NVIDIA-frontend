@@ -8,11 +8,20 @@ import Link from "next/link";
 
 function Models() {
     const settings = {
-        dots: true,
+        dots: false,
         infinite: true,
         slidesToShow: 4,
         slidesToScroll: 1,
-        adaptiveHeight: true,
+        responsive: [
+            {
+                breakpoint: 1280,
+                settings: {
+                    slidesToShow: 3,
+                    slidesToScroll: 1,
+                    infinite: true,
+                },
+            },
+        ],
     };
 
     const models = [
@@ -24,15 +33,15 @@ function Models() {
 
     return (
         <div className="py-[75px]">
-            <div className="wrapper pb-[40px]">
-                <h2 className="text-[36px] font-bold">
+            <div className="wrapper pb-[40px] max-[1280px]:w-[980px]">
+                <h2 className="text-[36px] font-bold max-[1280px]:text-[28px] ">
                     Experience Leading Open Models Now
                 </h2>
             </div>
-            <div className="w-full wrapper">
+            <div className="w-full wrapper max-[1280px]:w-[980px]">
                 <Slider {...settings}>
                     {models.map((model) => (
-                        <div key={model.id} className="w-full">
+                        <div key={model.id} className="w-full ">
                             <div className="w-[95%] relative">
                                 <Link
                                     href={{

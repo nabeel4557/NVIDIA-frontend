@@ -4,12 +4,12 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 function Integrations() {
     return (
         <div>
-            <div className="wrapper">
+            <div className="wrapper max-[1280px]:w-[980px]">
                 <div>
-                    <h6 className="text-[20px] font-bold text-center">
+                    <h6 className="text-[20px] font-bold text-center max-[1280px]:text-[18px]">
                         Integrations
                     </h6>
-                    <h4 className="text-[36px] font-bold text-center">
+                    <h4 className="text-[36px] font-bold text-center max-[1280px]:text-[28px]">
                         Accelerated AI is Just an API Call Away
                     </h4>
                     <p className="text-[16px] text-center mt-[10px]">
@@ -21,7 +21,7 @@ function Integrations() {
                         <img src="/images/img1.jpeg" />
                     </div>
                     <div className="w-1/2">
-                        <h3 className="font-bold text-[28px]">
+                        <h3 className="font-bold text-[28px] max-[1280px]:text-[24px]">
                             Seamless Compatibility With Popular Libraries
                         </h3>
                         <p className="text-[15px] mt-[10px]">
@@ -32,7 +32,7 @@ function Integrations() {
                 </div>
                 <div className="flex w-full py-[45px] items-center">
                     <div className="w-1/2">
-                        <h3 className="font-bold text-[28px]">
+                        <h3 className="font-bold text-[28px] max-[1280px]:text-[24px]">
                             Use the Tools You Love
                         </h3>
                         <p className="text-[15px] mt-[10px] mb-[10px]">
@@ -41,10 +41,14 @@ function Integrations() {
                             LlamaIndex, and easily integrate the latest AI
                             models in your applications.
                         </p>
-                        <h5 className="font-bold text-[18px] flex items-center">
+                        <h5 className="font-bold text-[18px] flex  max-[1280px]:text-[16px] ">
                             Learn More About Building With These Tools and
                             NVIDIA NIM
-                            <MdKeyboardArrowRight size={30} color="#76B900" />
+                            <MdKeyboardArrowRight
+                                size={30}
+                                color="#76B900"
+                                className="max-[1280px]:hidden"
+                            />
                         </h5>
                     </div>
                     <div className="w-[1/2]">
@@ -56,7 +60,7 @@ function Integrations() {
                         <img src="/images/img3.jpeg" />
                     </div>
                     <div className="w-1/2">
-                        <h3 className="text-[28px] font-bold">
+                        <h3 className="text-[28px] font-bold max-[1280px]:text-[24px]">
                             NIM Agent Blueprints
                         </h3>
                         <p className="text-[15px] mt-[15px] mb-[15px]">
@@ -66,13 +70,13 @@ function Integrations() {
                             code, customization instructions, and a Helm chart
                             for deployment.
                         </p>
-                        <h6 className="text-[18px] font-bold flex items-center">
-                            Learn More{" "}
-                            <MdKeyboardArrowRight size={30} color="#76B900" />
+                        <h6 className="text-[18px] font-bold flex items-center max-[1280px]:text-[16px]">
+                            Learn More
+                            <MdKeyboardArrowRight size={30} color="#76B900 " className="max-[1280px]:size-[24px]"/>
                         </h6>
-                        <h6 className="text-[18px] font-bold mt-[10px] flex items-center">
-                            Try Now{" "}
-                            <MdKeyboardArrowRight size={30} color="#76B900" />
+                        <h6 className="text-[18px] font-bold mt-[10px] flex items-center max-[1280px]:text-[16px]">
+                            Try Now
+                            <MdKeyboardArrowRight size={30} color="#76B900" className="max-[1280px]:size-[24px]" />
                         </h6>
                     </div>
                 </div>

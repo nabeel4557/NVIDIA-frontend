@@ -6,14 +6,14 @@ function Run() {
     return (
         <>
             <div className=" wrapper py-[75px]">
-                <div className="w-[1000px] mx-auto">
-                    <h6 className="text-center text-[20px] font-bold">
+                <div className="w-[880px] mx-auto justify-center max-[1280px]:w-[780px]">
+                    <h6 className="text-center text-[20px] font-bold max-[1280px]:text-[16px]">
                         Run Anywhere
                     </h6>
-                    <h2 className="text-center py-[8px] text-[36px] font-bold ">
+                    <h2 className="text-center py-[8px] text-[36px] font-bold max-[1280px]:text-[28px] ">
                         Accelerate Your AI Deployment With NVIDIA NIM
                     </h2>
-                    <p className=" text-center text-[15px] ml-[60px] ">
+                    <p className="w-[850px]  text-center text-[15px] justify-center max-[1280px]:w-[630px] max-[1280px]:ml-[60px] ">
                         Part of NVIDIA AI Enterprise, NVIDIA NIM is a set of
                         easy-to-use inference microservices for accelerating the
                         deployment of foundation models on any cloud or data
@@ -24,13 +24,13 @@ function Run() {
                     <img src="/images/img4.jpg" />
                 </div>
                 <div className=" space-y-3 mt-[30px]">
-                    <h6 className="flex items-center justify-center text-[18px] font-bold">
+                    <h6 className="flex items-center justify-center text-[18px] font-bold max-[1280px]:text-[16px]">
                         <Link href="#" className="flex items-center">
                             Learn More About NVIDIA NIM{" "}
                             <MdKeyboardArrowRight size={30} color="#76B900" />
                         </Link>
                     </h6>
-                    <h6 className="flex items-center justify-center text-[18px] font-bold">
+                    <h6 className="flex items-center justify-center text-[18px] font-bold max-[1280px]:text-[16px]">
                         <Link href="#" className="flex items-center">
                             See How to Deploy NIM in Five Minutes{" "}
                             <MdKeyboardArrowRight size={30} color="#76B900" />
@@ -166,20 +166,29 @@ function Run() {
                             Fine-Tune With NVIDIA NeMo
                         </h2>
                         <p className="text-[15px] leading-6 mt-[10px]">
-                           <span className="border-b-[2px] border-b-[#76B900]">NVIDIA NeMo™</span>  is an end-to-end platform for
-                            developing custom generative AI anywhere. It
-                            includes tools for training, customization and
-                            retrieval-augmented generation (RAG), guardrailing,
-                            data curation, and model pretraining, offering
-                            enterprises an easy, cost-effective, and fast way to
-                            adopt generative AI.
+                            <span className="border-b-[2px] border-b-[#76B900]">
+                                NVIDIA NeMo™
+                            </span>{" "}
+                            is an end-to-end platform for developing custom
+                            generative AI anywhere. It includes tools for
+                            training, customization and retrieval-augmented
+                            generation (RAG), guardrailing, data curation, and
+                            model pretraining, offering enterprises an easy,
+                            cost-effective, and fast way to adopt generative AI.
                         </p>
                         <h5 className="mt-[20px] font-bold text-[18px] flex items-center">
                             Read Technical Blog{" "}
-                            <MdKeyboardArrowRight className="text-[#768900]" size={30} />
+                            <MdKeyboardArrowRight
+                                className="text-[#768900]"
+                                size={30}
+                            />
                         </h5>
                         <h5 className="mt-[10px] font-bold text-[18px] flex items-center">
-                            Get Started With Tutorials <MdKeyboardArrowRight size={30} className="text-[#768900]"/>
+                            Get Started With Tutorials{" "}
+                            <MdKeyboardArrowRight
+                                size={30}
+                                className="text-[#768900]"
+                            />
                         </h5>
                     </div>
                     <div className="w-1/2">
