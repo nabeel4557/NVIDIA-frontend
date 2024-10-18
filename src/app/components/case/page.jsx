@@ -4,25 +4,25 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 function Case() {
     return (
         <div className="w-full bg-[#EEEEEE] text-[#000] py-[75px]">
-            <div className="wrapper ">
-                <h5 className=" text-center text-[#1A1A1A] text-[20px] font-bold">
+            <div className="wrapper max-[1280px]:w-[980px] max-[1080px]:w-[700px]">
+                <h5 className=" text-center text-[#1A1A1A] text-[20px] font-bold max-[1280px]:text-[18px]">
                     Use Cases
                 </h5>
-                <h2 className=" text-center text-[36px] font-bold">
+                <h2 className=" text-center text-[36px] font-bold max-[1280px]:text-[28px]">
                     Ignite Your Innovation
                 </h2>
-                <p className=" text-center text-[15px] text-[#1A1A1A]">
+                <p className=" text-center text-[15px] text-[#1A1A1A] mt-[10px]">
                     See how NVIDIA APIs support industry use cases and
                     jump-start your AI development with curated examples.
                 </p>
 
-                <div className="flex items-center mt-[40px] gap-5 ">
-                    <div className="w-1/3 bg-[#fff] h-[530px] relative pb-[30px] shadow-lg">
+                <div className="flex  items-center mt-[40px] gap-5 max-[1080px]:w-[700px] max-[1080px]:mx-auto max-[1080px]:flex-wrap max-[980px]:w-[700px] ">
+                    <div className="w-1/3 bg-[#fff] h-[530px] relative pb-[30px] shadow-lg max-[1080px]:w-[300px]">
                         <div className="w-full ">
                             <img src="/images/img7.jpeg" />
                         </div>
                         <div className="my-[30px] px-[20px] ">
-                            <h3 className="text-[24px] font-bold">
+                            <h3 className="text-[24px] font-bold max-[1280px]:text-[20px]">
                                 Digital Humans
                             </h3>
                             <p className="text-[15px] text-[#1A1A1A] mt-[30px]">
@@ -31,21 +31,22 @@ function Case() {
                                 service, empowering your application to connect
                                 more deeply with users.
                             </p>
-                            <h6 className="flex items-center text-[18px] font-bold absolute bottom-[30px] z-10 ">
+                            <h6 className="flex items-center text-[18px] font-bold absolute bottom-[30px] z-10 max-[1280px]:text-[16px] ">
                                 Learn More
                                 <MdKeyboardArrowRight
                                     size={30}
                                     color="#768900"
+                                    className="max-[1280px]:size-[24px]"
                                 />
                             </h6>
                         </div>
                     </div>
-                    <div className="w-1/3 bg-[#fff] h-[530px] relative pb-[30px] shadow-lg">
+                    <div className="w-1/3 bg-[#fff] h-[530px] relative pb-[30px] shadow-lg max-[1080px]:w-[300px]">
                         <div className="w-full">
                             <img src="/images/img8.jpeg" />
                         </div>
                         <div className="my-[30px] px-[20px]">
-                            <h3 className="text-[24px] font-bold">
+                            <h3 className="text-[24px] font-bold max-[1280px]:text-[20px]">
                                 Content Generation
                             </h3>
                             <p className="text-[15px] text-[#1A1A1A] mt-[30px]">
@@ -53,21 +54,22 @@ function Case() {
                                 content, grounded in the domain expertise and
                                 proprietary IP of your enterprise.
                             </p>
-                            <h6 className="flex items-center text-[18px] font-bold absolute bottom-[30px] z-10">
+                            <h6 className="flex items-center text-[18px] font-bold absolute bottom-[30px] z-10 max-[1280px]:text-[16px]">
                                 Learn More
                                 <MdKeyboardArrowRight
                                     size={30}
                                     color="#768900"
+                                    className="max-[1280px]:size-[24px]"
                                 />
                             </h6>
                         </div>
                     </div>
-                    <div className="w-1/3 bg-[#fff] h-[530px] relative pb-[30px] shadow-lg">
+                    <div className="w-1/3 bg-[#fff] h-[530px] relative pb-[30px] shadow-lg max-[1080px]:w-[300px] max-[1080px]:mx-auto">
                         <div className="w-full">
                             <img src="/images/img9.jpeg" />
                         </div>
                         <div className="my-[30px] px-[20px]">
-                            <h3 className="text-[24px] font-bold">
+                            <h3 className="text-[24px] font-bold max-[1280px]:text-[20px]">
                                 Biomolecular Generation
                             </h3>
                             <p className="text-[15px] text-[#1A1A1A] mt-[30px]">
@@ -77,11 +79,12 @@ function Case() {
                                 sets of small molecules tailored to specific
                                 drug targets or properties.
                             </p>
-                            <h6 className="flex items-center text-[18px] font-bold absolute bottom-[30px] z-10">
+                            <h6 className="flex items-center text-[18px] font-bold absolute bottom-[30px] z-10 max-[1280px]:text-[16px]">
                                 Learn More
                                 <MdKeyboardArrowRight
                                     size={30}
                                     color="#768900"
+                                    className="max-[1280px]:size-[24px]"
                                 />
                             </h6>
                         </div>

@@ -18,7 +18,21 @@ function Models() {
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 1,
-                    infinite: true,
+                },
+            },
+            {
+                breakpoint: 1080,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                },
+            },
+
+            {
+                breakpoint: 980,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
                 },
             },
         ],
@@ -33,12 +47,12 @@ function Models() {
 
     return (
         <div className="py-[75px]">
-            <div className="wrapper pb-[40px] max-[1280px]:w-[980px]">
+            <div className="wrapper pb-[40px] max-[1280px]:w-[980px] max-[1080px]:w-[700px] max-[1080px]:mx-auto  max-[980px]:full">
                 <h2 className="text-[36px] font-bold max-[1280px]:text-[28px] ">
                     Experience Leading Open Models Now
                 </h2>
             </div>
-            <div className="w-full wrapper max-[1280px]:w-[980px]">
+            <div className="w-full wrapper max-[1280px]:w-[980px] max-[1080px]:w-[700px]">
                 <Slider {...settings}>
                     {models.map((model) => (
                         <div key={model.id} className="w-full ">

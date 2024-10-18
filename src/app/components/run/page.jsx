@@ -6,31 +6,31 @@ function Run() {
     return (
         <>
             <div className=" wrapper py-[75px]">
-                <div className="w-[880px] mx-auto justify-center max-[1280px]:w-[780px]">
+                <div className="w-[880px] mx-auto justify-center max-[1280px]:w-[780px] max-[1080px]:w-[700px] max-[1080px]:mx-auto">
                     <h6 className="text-center text-[20px] font-bold max-[1280px]:text-[16px]">
                         Run Anywhere
                     </h6>
-                    <h2 className="text-center py-[8px] text-[36px] font-bold max-[1280px]:text-[28px] ">
+                    <h2 className="text-center py-[8px] text-[36px] font-bold max-[1280px]:text-[28px] max-[1080px]:text-[24px] max-[1080px]:w-[440px] max-[1080px]:mx-auto">
                         Accelerate Your AI Deployment With NVIDIA NIM
                     </h2>
-                    <p className="w-[850px]  text-center text-[15px] justify-center max-[1280px]:w-[630px] max-[1280px]:ml-[60px] ">
+                    <p className="w-[850px]  text-center text-[15px] justify-center max-[1280px]:w-[630px] max-[1280px]:ml-[60px] max-[1080px]:w-[550px] ">
                         Part of NVIDIA AI Enterprise, NVIDIA NIM is a set of
                         easy-to-use inference microservices for accelerating the
                         deployment of foundation models on any cloud or data
                         center and helping to keep your data secure.
                     </p>
                 </div>
-                <div className="w-full">
+                <div className="w-full max-[1280px]:w-[980px] max-[1280px]:mx-auto max-[1080px]:w-[700px] max-[1080px]:mx-auto max-[1080px]:mt-[]20px">
                     <img src="/images/img4.jpg" />
                 </div>
                 <div className=" space-y-3 mt-[30px]">
-                    <h6 className="flex items-center justify-center text-[18px] font-bold max-[1280px]:text-[16px]">
+                    <h6 className="flex items-center justify-center text-[18px] font-bold max-[1280px]:text-[16px] max-[1080px]:text-[14px]">
                         <Link href="#" className="flex items-center">
-                            Learn More About NVIDIA NIM{" "}
+                            Learn More About NVIDIA NIM
                             <MdKeyboardArrowRight size={30} color="#76B900" />
                         </Link>
                     </h6>
-                    <h6 className="flex items-center justify-center text-[18px] font-bold max-[1280px]:text-[16px]">
+                    <h6 className="flex items-center justify-center text-[18px] font-bold max-[1280px]:text-[16px] max-[1080px]:text-[14px]">
                         <Link href="#" className="flex items-center">
                             See How to Deploy NIM in Five Minutes{" "}
                             <MdKeyboardArrowRight size={30} color="#76B900" />
@@ -38,20 +38,20 @@ function Run() {
                     </h6>
                 </div>
 
-                <div className="py-[75px]  border-b-[2px] border-b-[#202020] w-full flex">
+                <div className="py-[75px] gap-5  border-b-[2px] border-b-[#202020] w-full flex max-[1280px]:w-[980px] max-[1280px]:mx-auto max-[1080px]:w-[700px] max-[1080px]:mx-auto">
                     <div className="left w-1/2  ">
                         <div className="">
-                            <h3 className="text-[28px] font-bold">
+                            <h3 className="text-[28px] font-bold max-[1280px]:text-[24px] max-[1080px]:text-[20px]">
                                 Deploy NIM
                             </h3>
                             <p className="text-[15px] mt-[10px] mb-[30px]">
                                 Deploy NIM for your model with a single command.
-                                You can also easily run NIM with
-                                <br /> fine tuned-models.
+                                You can also easily run NIM with fine
+                                tuned-models.
                             </p>
                         </div>
                         <div className="">
-                            <h3 className="text-[28px] font-bold">
+                            <h3 className="text-[28px] font-bold max-[1280px]:text-[24px] max-[1080px]:text-[20px]">
                                 Run Inference
                             </h3>
                             <p className="text-[15px] mt-[10px] mb-[30px]">
@@ -61,7 +61,9 @@ function Run() {
                             </p>
                         </div>
                         <div>
-                            <h3 className="text-[28px] font-bold">Build</h3>
+                            <h3 className="text-[28px] font-bold max-[1280px]:text-[24px] max-[1080px]:text-[20px]">
+                                Build
+                            </h3>
                             <p className="text-[15px] mt-[10px]">
                                 Developers can integrate self-hosted NIM
                                 endpoints in just a few lines of code.
@@ -103,13 +105,13 @@ function Run() {
                         </div>
                     </div>
                 </div>
-                <div className="py-[75px] w-full">
+                <div className="py-[75px] w-full max-[1280px]:w-[980px] max-[1280px]:mx-auto  max-[1080px]:w-[700px] max-[1080px]:mx-auto">
                     <div className="w-full flex gap-5">
                         <div className="left-side w-1/2">
                             <div className="w-[96px] h-[96px] mx-auto mb-[20px]">
                                 <img src="/images/svg1.svg" />
                             </div>
-                            <h3 className="text-[24px] font-bold text-center mb-[20px]">
+                            <h3 className="text-[24px] font-bold text-center mb-[20px] max-[1280px]:text-[20px] max-[1080px]:text-[18px] ">
                                 Launch Locally or Scale With Kubernetes
                             </h3>
                             <p className="text-[15px] text-center ">
@@ -122,7 +124,7 @@ function Run() {
                             <div className="w-[96px] h-[96px] mx-auto mb-[20px]">
                                 <img src="/images/svg2.svg" />
                             </div>
-                            <h3 className="text-[24px] font-bold text-center mb-[20px]">
+                            <h3 className="text-[24px] font-bold text-center mb-[20px] max-[1280px]:text-[20px] max-[1080px]:text-[18px] ">
                                 Deploy Securely With Confidence
                             </h3>
                             <p className="text-[15px] text-center">
@@ -133,11 +135,11 @@ function Run() {
                             </p>
                         </div>
                     </div>
-                    <div className="w-[850px] mx-auto mt-[40px]">
+                    <div className="w-[850px] mx-auto mt-[40px] max-[1080px]:w-[500px] max-[1080px]:mx-auto">
                         <div className="w-[96px] h-[96px] mx-auto mb-[20px]">
                             <img src="/images/svg3.svg" />
                         </div>
-                        <h3 className="text-[24px] font-bold text-center mb-[20px]">
+                        <h3 className="text-[24px] font-bold text-center mb-[20px] max-[1280px]:text-[20px] max-[1080px]:text-[18px]">
                             Lower Costs and Your Carbon Footprint
                         </h3>
                         <p className="text-[15px] text-center">
@@ -152,17 +154,17 @@ function Run() {
 
             <div className="customization py-[75px] bg-[#4D0068]">
                 <div>
-                    <span className="font-bold text-[#fff] text-[20px] text-center flex justify-center">
+                    <span className="font-bold text-[#fff] text-[20px] text-center flex justify-center max-[1080px]:text-[16px]">
                         Customization
                     </span>
-                    <h2 className="text-[36px] font-bold text-[#fff] text-center">
+                    <h2 className="text-[36px] font-bold text-[#fff] text-center mt-[20px] mb-[50px] max-[1280px]:text-[28px] max-[1080px]:text-[24px] max-[1080px]:w-[700px] max-[1080px]:mx-auto">
                         Tailor NIM Microservices for Your Domain-Specific Needs
                     </h2>
                 </div>
 
-                <div className="w-full flex wrapper">
+                <div className="w-full flex  wrapper max-[1280px]:w-[980px] max-[1080px]:w-[700px]">
                     <div className="w-1/2">
-                        <h2 className="text-[28px] font-bold">
+                        <h2 className="text-[28px] font-bold max-[1280px]:text-[24px] max-[1080px]:text-[20px]">
                             Fine-Tune With NVIDIA NeMo
                         </h2>
                         <p className="text-[15px] leading-6 mt-[10px]">
@@ -176,14 +178,14 @@ function Run() {
                             model pretraining, offering enterprises an easy,
                             cost-effective, and fast way to adopt generative AI.
                         </p>
-                        <h5 className="mt-[20px] font-bold text-[18px] flex items-center">
+                        <h5 className="mt-[20px] font-bold text-[18px] flex items-center max-[1080px]:text-[14px]">
                             Read Technical Blog{" "}
                             <MdKeyboardArrowRight
                                 className="text-[#768900]"
                                 size={30}
                             />
                         </h5>
-                        <h5 className="mt-[10px] font-bold text-[18px] flex items-center">
+                        <h5 className="mt-[10px] font-bold text-[18px] flex items-center max-[1080px]:text-[14px]">
                             Get Started With Tutorials{" "}
                             <MdKeyboardArrowRight
                                 size={30}

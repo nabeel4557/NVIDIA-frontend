@@ -20,12 +20,12 @@ function NavbarBottom() {
         <div className="bg-[#000] sticky top-0 z-20">
             <div className="wrapper flex items-center py-4 gap-[25px]">
                 <div className="">
-                    <h2 className="text-[28px] text-white">
+                    <h2 className="text-[28px] text-white max-[1080px]:text-[20px]">
                         Artificial Intelligence
                     </h2>
                 </div>
                 <div className="flex items-center">
-                    <ul className="flex items-center text-[16px] gap-[25px] mt-2 text-[#999999]">
+                    <ul className="flex items-center text-[16px] gap-[25px] mt-2 text-[#999999] max-[1080px]:hidden">
                         <li>
                             <Link href="/industries">Industries</Link>
                         </li>
@@ -106,13 +106,17 @@ function NavbarBottom() {
                                         </Link>
                                     </li>
                                     <li>
-                                        <Link href="#">AI Inference - Triton</Link>
+                                        <Link href="#">
+                                            AI Inference - Triton
+                                        </Link>
                                     </li>
                                     <li>
                                         <Link href="#">AI Workflows</Link>
                                     </li>
                                     <li>
-                                        <Link href="#">Cybersecurity - Morpheus</Link>
+                                        <Link href="#">
+                                            Cybersecurity - Morpheus
+                                        </Link>
                                     </li>
                                     <li>
                                         <Link href="#">Conversational AI</Link>
@@ -131,7 +135,6 @@ function NavbarBottom() {
                                             Prediction and Forecasting
                                         </Link>
                                     </li>
-                                    
                                 </ul>
                             )}
                         </li>

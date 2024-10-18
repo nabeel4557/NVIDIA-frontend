@@ -10,7 +10,7 @@ function Navbar3() {
 
     return (
         <div className="bg-[#1A1A1A] sticky top-[90px] py-2">
-            <div className="wrapper flex items-center justify-between w-full h-[60px] max-[1280px]:w-[980px]">
+            <div className="wrapper flex items-center justify-between w-full h-[60px] max-[1280px]:w-[980px] max-[1080px]:w-[700px] max-[980px]:w-full">
                 <div className="flex items-center">
                     <ul className="text-[#EEEEEE] flex items-center gap-5 text-[15px]">
                         <li>
@@ -65,7 +65,7 @@ function Navbar3() {
                                 Get Started
                             </Link>
                         </li>
-                        <li>
+                        <li className="max-[1080px]:hidden">
                             <Link
                                 href="#case"
                                 scroll={true}
@@ -78,7 +78,7 @@ function Navbar3() {
                                 Use Cases
                             </Link>
                         </li>
-                        <li>
+                        <li className="max-[1080px]:hidden">
                             <Link
                                 href="#ecosystem"
                                 scroll={true}
@@ -91,7 +91,7 @@ function Navbar3() {
                                 Ecosystem
                             </Link>
                         </li>
-                        <li>
+                        <li className="max-[1080px]:hidden">
                             <Link
                                 href="#resources"
                                 scroll={true}
@@ -104,7 +104,7 @@ function Navbar3() {
                                 Resources
                             </Link>
                         </li>
-                        <li>
+                        <li className="max-[1080px]:hidden">
                             <Link
                                 href="#documentation"
                                 scroll={true}

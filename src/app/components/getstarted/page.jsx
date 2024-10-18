@@ -2,17 +2,16 @@ import React from "react";
 import { FaCheck } from "react-icons/fa";
 import { MdKeyboardArrowRight } from "react-icons/md";
 
-
 function GetStarted() {
     return (
         <div className="w-full pt-[75px] bg-[#1A1A1A]">
-            <div className="wrapper w-full">
-                <h2 className="text-[36px] text-[#fff] font-bold text-center">
+            <div className="wrapper w-full max-[1280px]:w-[980px] max-[1080px]:w-[700px] max-[1080px]:mx-auto">
+                <h2 className="text-[36px] text-[#fff] font-bold text-center max-[1280px]:text-[28px] max-[1080px]:text-[24px]">
                     Get Started
                 </h2>
                 <div className="w-full flex  gap-6 mt-[40px]">
                     <div className="w-1/2 py-[30px] px-[28px] bg-[#000]">
-                        <h3 className="text-[28px] font-bold mb-[30px]">
+                        <h3 className="text-[28px] font-bold mb-[30px] max-[1280px]:text-[24px] max-[1080px]:text-[20px]">
                             Start Prototyping for Free
                         </h3>
                         <p>
@@ -35,7 +34,7 @@ function GetStarted() {
                         </ul>
                     </div>
                     <div className="w-1/2 py-[30px] px-[28px] bg-[#000]">
-                        <h3 className="text-[28px] font-bold mb-[30px]">
+                        <h3 className="text-[28px] font-bold mb-[30px] max-[1280px]:text-[24px] max-[1080px]:text-[20px]">
                             Download and Deploy
                         </h3>
                         <p>
@@ -44,20 +43,26 @@ function GetStarted() {
                         </p>
                         <ul className="mt-15px text-[15px]">
                             <li className="mt-[10px] flex items-center gap-2">
-                                <FaCheck size={16} className="text-[#768900]" />
+                                <FaCheck
+                                    size={16}
+                                    className="text-[#768900] max-[1080px]:size-[20px]"
+                                />
                                 Ensure that data never leaves your secure
                                 enclave.
                             </li>
                             <li className="mt-[10px] flex it gap-2">
                                 <FaCheck
                                     size={17}
-                                    className="text-[#768900] mt-[5px]"
+                                    className="text-[#768900] mt-[5px] max-[1080px]:size-[35px]"
                                 />
                                 Seamlessly transition from cloud endpoints to
                                 self-hosted APIs without code changes.
                             </li>
                             <li className="mt-[10px] flex  gap-2">
-                                <FaCheck size={22} className="text-[#768900]" />
+                                <FaCheck
+                                    size={22}
+                                    className="text-[#768900] max-[1080px]:size-[40px]"
+                                />
                                 Use an NVIDIA AI Enterprise license for
                                 production, or get started for free with the
                                 NVIDIA Developer Program.
@@ -65,26 +70,35 @@ function GetStarted() {
                         </ul>
                     </div>
                 </div>
-                <button className=" flex mx-auto mt-[30px] py-[11px] px-[13px] text-[18px] font-bold border-[2px] border-[#768900]">
+                <button className=" flex mx-auto mt-[30px] py-[11px] px-[13px] text-[18px] font-bold border-[2px] border-[#768900] max-[1280px]:py-[9px] max-[1280px]:px-[11px] max-[1280px]:text-[16px] max-[1080px]:py-[7px] max-[1080px]:px-[10px] max-[1080px]:text-[14px]">
                     Build Now
                 </button>
             </div>
             <div
                 className="w-full h-[450px]  bg-cover bg-center mt-[40px] py-[75px]"
                 style={{ backgroundImage: `url(/images/img6.jpg)` }}>
-                <div className="w-1/2">
-                    <div className="wrapper">
-                        <h2 className="text-[36px] font-bold text-[#fff]">
-                            Build Custom Generative AI Models With NVIDIA AI
-                            Foundry
-                        </h2>
-                        <p className="text-[15px] mt-[20px] text-[#EEEEEE]">
-                            Access foundation models, enterprise software,
-                            accelerated computing, and AI expertise to build,
-                            fine-tune, and deploy custom models for your
-                            enterprise applications.
-                        </p>
-                        <span className="text-[18px] font-bold mt-[25px] inline-block flex items-center">Get Started <MdKeyboardArrowRight color="#76B900" size={30}/></span>
+                <div className="w-full max-[1280px]:w-[1100px] max-[1280px]:mx-auto max-[1080px]:w-[700px] max-[1080px]:mx-auto">
+                    <div className="wrapper max-[1280px]:left-0">
+                        <div className="w-1/2">
+                            <h2 className="text-[36px] font-bold text-[#fff] max-[1280px]:text-[28px] max-[1080px]:text-[24px]">
+                                Build Custom Generative AI Models With NVIDIA AI
+                                Foundry
+                            </h2>
+                            <p className="text-[15px] mt-[20px] text-[#EEEEEE]">
+                                Access foundation models, enterprise software,
+                                accelerated computing, and AI expertise to
+                                build, fine-tune, and deploy custom models for
+                                your enterprise applications.
+                            </p>
+                            <span className="text-[18px] font-bold mt-[25px] inline-block flex items-center max-[1280px]:text-[16px] max-[1080px]:text-[14px]">
+                                Get Started{" "}
+                                <MdKeyboardArrowRight
+                                    className="max-[1280px]:size-[24px]"
+                                    color="#76B900"
+                                    size={30}
+                                />
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
