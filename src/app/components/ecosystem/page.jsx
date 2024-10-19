@@ -2,8 +2,8 @@ import React from "react";
 
 function Ecosystem() {
     return (
-        <div className="w-full bg-[#fff] py-[75px] ">
-            <div className="w-full max-[1280px]:w-[980px] max-[1280px]:mx-auto max-[1080px]:w-[700px] max-[1080px]:mx-auto">
+        <div className="w-full bg-[#fff] py-[75px] max-[540px]:w-full ">
+            <div className="w-full max-[1280px]:w-[980px] max-[1280px]:mx-auto max-[1080px]:w-[700px] max-[1080px]:mx-auto max-[786px]:w-[600px] max-[640px]:w-[500px] max-[540px]:w-full">
                 <h6 className="text-[20px] font-bold text-[#1A1A1A] text-center max-[1280px]:text-[18px]">
                     Ecosystem
                 </h6>

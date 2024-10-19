@@ -5,7 +5,7 @@ function Documentation() {
     return (
         <div className="w-full bg-[#1A1A1A] text-[#EEEEEE] py-[75px]">
             <div className="wrapper">
-                <div className="w-full max-[1280px]:w-[980px] max-[1280px]:mx-auto max-[1080px]:w-[700px] max-[1080px]:mx-auto">
+                <div className="w-full max-[1280px]:w-[980px] max-[1280px]:mx-auto max-[1080px]:w-[700px] max-[1080px]:mx-auto max-[786px]:w-[600px] max-[640px]:w-[500px] max-[540px]:w-full">
                     <h2 className="text-[36px] font-bold text-center max-[1280px]:text-[28px] max-[1080px]:text-[24px]">
                         Documentation
                     </h2>

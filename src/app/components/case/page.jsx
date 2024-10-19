@@ -3,8 +3,8 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 
 function Case() {
     return (
-        <div className="w-full bg-[#EEEEEE] text-[#000] py-[75px]">
-            <div className="wrapper max-[1280px]:w-[980px] max-[1080px]:w-[700px]">
+        <div className="w-full bg-[#EEEEEE] text-[#000] py-[75px] max-[540px]:w-full">
+            <div className="wrapper max-[1280px]:w-[980px] max-[1080px]:w-[700px] max-[786px]:w-[600px] max-[640px]:w-[500px] max-[540px]:w-full max-[540px]:px-[10px] ">
                 <h5 className=" text-center text-[#1A1A1A] text-[20px] font-bold max-[1280px]:text-[18px]">
                     Use Cases
                 </h5>
@@ -16,12 +16,15 @@ function Case() {
                     jump-start your AI development with curated examples.
                 </p>
 
-                <div className="flex  items-center mt-[40px] gap-5 max-[1080px]:w-[700px] max-[1080px]:mx-auto max-[1080px]:flex-wrap max-[980px]:w-[700px] ">
-                    <div className="w-1/3 bg-[#fff] h-[530px] relative pb-[30px] shadow-lg max-[1080px]:w-[300px]">
-                        <div className="w-full ">
-                            <img src="/images/img7.jpeg" />
+                <div className="flex  items-center mt-[40px] gap-5 max-[1080px]:w-[700px] max-[1080px]:mx-auto max-[1080px]:flex-wrap max-[980px]:w-[700px] max-[786px]:w-[600px] max-[640px]:w-[500px] max-[540px]:w-full">
+                    <div className="w-1/3 bg-[#fff] h-[530px] relative pb-[30px] shadow-lg max-[1080px]:w-[300px] max-[786px]:w-[280px] max-[640px]:w-[500px] max-[540px]:w-full">
+                        <div className="w-full max-[640px]:w-[500px] max-[540px]:w-full ">
+                            <img
+                                className="max-[640px]:w-[500px] max-[540px]:w-full"
+                                src="/images/img7.jpeg"
+                            />
                         </div>
-                        <div className="my-[30px] px-[20px] ">
+                        <div className="my-[30px] px-[20px] max-[540px]:w-full ">
                             <h3 className="text-[24px] font-bold max-[1280px]:text-[20px]">
                                 Digital Humans
                             </h3>
@@ -41,9 +44,12 @@ function Case() {
                             </h6>
                         </div>
                     </div>
-                    <div className="w-1/3 bg-[#fff] h-[530px] relative pb-[30px] shadow-lg max-[1080px]:w-[300px]">
-                        <div className="w-full">
-                            <img src="/images/img8.jpeg" />
+                    <div className="w-1/3 bg-[#fff] h-[530px] relative pb-[30px] shadow-lg max-[1080px]:w-[300px] max-[786px]:w-[280px] max-[640px]:w-[500px] max-[540px]:w-full">
+                        <div className="w-full max-[640px]:w-[500px] max-[540px]:w-full">
+                            <img
+                                className="max-[640px]:w-[500px] max-[540px]:w-full"
+                                src="/images/img8.jpeg"
+                            />
                         </div>
                         <div className="my-[30px] px-[20px]">
                             <h3 className="text-[24px] font-bold max-[1280px]:text-[20px]">
@@ -64,11 +70,14 @@ function Case() {
                             </h6>
                         </div>
                     </div>
-                    <div className="w-1/3 bg-[#fff] h-[530px] relative pb-[30px] shadow-lg max-[1080px]:w-[300px] max-[1080px]:mx-auto">
-                        <div className="w-full">
-                            <img src="/images/img9.jpeg" />
+                    <div className="w-1/3 bg-[#fff] h-[530px] relative pb-[30px] shadow-lg max-[1080px]:w-[300px] max-[1080px]:mx-auto max-[640px]:w-[500px] max-[540px]:w-full">
+                        <div className="w-full max-[640px]:w-[500px] max-[540px]:w-full">
+                            <img
+                                className="max-[640px]:w-[500px] max-[540px]:w-full"
+                                src="/images/img9.jpeg"
+                            />
                         </div>
-                        <div className="my-[30px] px-[20px]">
+                        <div className="my-[30px] px-[20px] max-[540px]:w-full">
                             <h3 className="text-[24px] font-bold max-[1280px]:text-[20px]">
                                 Biomolecular Generation
                             </h3>

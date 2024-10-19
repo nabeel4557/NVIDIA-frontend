@@ -5,8 +5,8 @@ import { MdSearch } from "react-icons/md";
 
 function NavbarTop() {
     return (
-        <div className="bg-[#fff] sticky top-0 ">
-            <div className="wrapper flex items-center justify-between">
+        <div className="bg-[#fff] sticky top-0  max-[540px]:w-full">
+            <div className="wrapper flex items-center justify-between max-[540px]:w-full">
                 <div className="left w-[250px] flex items-center ">
                     <h1 className="w-[120px]">
                         <Link href="/">
@@ -18,7 +18,7 @@ function NavbarTop() {
                     </span>
                     <span className="text-[#000]">MainMenu</span>
                 </div>
-                <div className="right">
+                <div className="right max-[540px]:hidden">
                     <ul className="flex items-center text-[#666666] gap-4">
                         <li>
                             <Link href="#">Shop</Link>
@@ -30,7 +30,9 @@ function NavbarTop() {
                             <Link href="#">Support</Link>
                         </li>
                         <li>
-                            <Link href="#"><MdSearch size={22}/></Link>
+                            <Link href="#">
+                                <MdSearch size={22} />
+                            </Link>
                         </li>
                     </ul>
                 </div>

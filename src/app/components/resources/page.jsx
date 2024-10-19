@@ -11,10 +11,13 @@ function Resources() {
                 <h2 className="text-[36px] text-[#000] font-bold text-center mt-[10px] max-[1280px]:text-[28px] max-[1080px]:text-[24px]">
                     Unlock, Upskill, and Upscale
                 </h2>
-                <div className="w-full flex items-center gap-4 mt-[40px] max-[1280px]:w-[980px] max-[1280px]:mx-auto max-[1080px]:w-[700px] max-[1080px]:mx-auto max-[1080px]:flex-wrap">
-                    <div className="w-1/4 bg-[#fff] h-[580px] relative pb-[30px] shadow-lg max-[1080px]:w-[300px]">
+                <div className="w-full flex items-center gap-4 mt-[40px] max-[1280px]:w-[980px] max-[1280px]:mx-auto max-[1080px]:w-[700px] max-[1080px]:mx-auto max-[1080px]:flex-wrap max-[786px]:w-[600px] max-[640px]:w-[500px] max-[640px]:block max-[540px]:w-full">
+                    <div className="w-1/4 bg-[#fff] h-[580px] relative pb-[30px] shadow-lg max-[1080px]:w-[300px] max-[786px]:w-[280px] max-[640px]:w-[500px] max-[540px]:w-full">
                         <div className="w-full">
-                            <img src="/images/img12.jpeg" />
+                            <img
+                                className="max-[640px]:w-[500px]"
+                                src="/images/img12.jpeg"
+                            />
                         </div>
                         <div className="my-[30px] px-[20px]">
                             <h6 className="text-[15px] font-bold text-[#000]">
@@ -39,9 +42,12 @@ function Resources() {
                             </h6>
                         </div>
                     </div>
-                    <div className="w-1/4 bg-[#fff] h-[580px] relative pb-[30px] shadow-lg max-[1080px]:w-[300px]">
+                    <div className="w-1/4 bg-[#fff] h-[580px] relative pb-[30px] shadow-lg max-[1080px]:w-[300px] max-[786px]:w-[280px] max-[640px]:w-[500px]  max-[640px]:mt-[30px] max-[540px]:w-full">
                         <div className="w-full">
-                            <img src="/images/img13.jpeg" />
+                            <img
+                                className="max-[640px]:w-[500px]"
+                                src="/images/img13.jpeg"
+                            />
                         </div>
                         <div className="my-[30px] px-[20px]">
                             <h6 className="text-[15px] font-bold text-[#000]">
@@ -66,9 +72,12 @@ function Resources() {
                             </h6>
                         </div>
                     </div>
-                    <div className="w-1/4 bg-[#fff] h-[580px] relative pb-[30px] shadow-lg max-[1080px]:w-[300px]">
+                    <div className="w-1/4 bg-[#fff] h-[580px] relative pb-[30px] shadow-lg max-[1080px]:w-[300px] max-[786px]:w-[280px] max-[640px]:w-[500px] max-[640px]:mt-[30px] max-[540px]:w-full">
                         <div>
-                            <img src="/images/img14.jpeg" />
+                            <img
+                                className="max-[640px]:w-[500px]"
+                                src="/images/img14.jpeg"
+                            />
                         </div>
                         <div className="my-[30px] px-[20px]">
                             <h6 className="text-[15px] font-bold text-[#000]">
@@ -93,9 +102,12 @@ function Resources() {
                             </h6>
                         </div>
                     </div>
-                    <div className="w-1/4 bg-[#fff] h-[580px] relative pb-[30px] shadow-lg max-[1080px]:w-[300px]">
+                    <div className="w-1/4 bg-[#fff] h-[580px] relative pb-[30px] shadow-lg max-[1080px]:w-[300px] max-[786px]:w-[280px] max-[640px]:mt-[30px] max-[640px]:w-[500px] max-[540px]:w-full">
                         <div>
-                            <img src="/images/img15.jpeg" />
+                            <img
+                                className="max-[640px]:w-[500px]"
+                                src="/images/img15.jpeg"
+                            />
                         </div>
                         <div className="my-[30px] px-[20px]">
                             <h6 className="text-[15px] font-bold text-[#000]">
