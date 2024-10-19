@@ -97,6 +97,7 @@ function GetStarted() {
                                     color="#76B900"
                                     size={30}
                                 />
+                                
                             </span>
                         </div>
                     </div>
