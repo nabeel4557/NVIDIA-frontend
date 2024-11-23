@@ -4,8 +4,6 @@ import React, { useState } from "react";
 import { FiPlay } from "react-icons/fi";
 
 function Spotlight() {
-   
-
     return (
         <>
             <div className="w-full relative py-12 justify-center h-[500px] overflow-hidden max-[640px]:w-[540px]  max-[540px]:w-full">

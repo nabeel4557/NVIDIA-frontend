@@ -8,8 +8,7 @@ import Case from "../case/page";
 import Ecosystem from "../ecosystem/page";
 import Resources from "../resources/page";
 import Documentation from "../documentation/page";
-import Models from "../../details/models/page";
-
+import Models from "../details/models/page";
 function HomePage() {
     return (
         <div>
@@ -17,7 +16,7 @@ function HomePage() {
                 <Spotlight />
             </div>
             <div id="models">
-                <Models/>
+                <Models />
             </div>
             <div id="integrations">
                 <Integrations />
