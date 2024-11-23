@@ -58,7 +58,7 @@ function Navbar3() {
                     </div>
                 </div>
 
-                {/* Navbar for larger screens */}
+                
                 <div className="flex items-center">
                     <ul className="text-[#EEEEEE] flex items-center gap-5 text-[15px]">
                         {navbarTitles.map((item, index) => (
@@ -79,7 +79,7 @@ function Navbar3() {
                     </ul>
                 </div>
 
-                {/* Try Now button */}
+                
                 <div>
                     <button className="text-black bg-[#76b900] text-[18px] py-[13px] px-[15px] border-none font-bold">
                         Try Now
