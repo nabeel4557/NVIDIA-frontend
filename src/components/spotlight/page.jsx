@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Navbar3 from "../includes/navbar/Navbar3";
+
 import React, { useState } from "react";
 import { FiPlay } from "react-icons/fi";
 
@@ -38,7 +38,6 @@ function Spotlight() {
                     </div>
                 </div>
             </div>
-            <Navbar3 />
         </>
     );
 }

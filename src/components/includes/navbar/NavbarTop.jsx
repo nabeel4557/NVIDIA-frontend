@@ -10,7 +10,11 @@ function NavbarTop() {
                 <div className="left w-[250px] flex items-center ">
                     <h1 className="w-[120px]">
                         <Link href="/">
-                            <img className='w-[100%]' src="/images/Logo.jpeg" alt="logo" />
+                            <img
+                                className="w-[100%]"
+                                src="/images/Logo.jpeg"
+                                alt="logo"
+                            />
                         </Link>
                     </h1>
                     <span>
@@ -18,7 +22,7 @@ function NavbarTop() {
                     </span>
                     <span className="text-[#000]">MainMenu</span>
                 </div>
-                <div className="right max-[540px]:hidden">
+                <div className="right mr-[80px] max-[540px]:hidden">
                     <ul className="flex items-center text-[#666666] gap-4">
                         <li>
                             <Link href="#">Shop</Link>

@@ -16,9 +16,9 @@ function NavbarBottom() {
         {
             title: "Solutions",
             datas: [
-                { title: "Industries" },
-                { title: "AI Platform" },
                 { title: "Overview" },
+                { title: "AI Platform" },
+                { title: "Industries" },
                 { title: "Conversational AI" },
                 { title: "Data Analytics" },
                 { title: "Generative AI" },

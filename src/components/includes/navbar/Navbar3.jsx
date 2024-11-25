@@ -174,7 +174,7 @@ function Navbar3({ currentSection }) {
 
         const observer = new IntersectionObserver(handleIntersection, {
             root: null,
-            threshold: 0,
+            threshold: .6,
         });
 
         sectionRefs?.current?.forEach((ref) => {
@@ -196,7 +196,7 @@ function Navbar3({ currentSection }) {
 
         const observer = new IntersectionObserver(handleObserver, {
             root: null,
-            threshold: 0,
+            threshold: .6,
             rootMargin: isNavbarTopVisible
                 ? "-110px 0px 0px 0px"
                 : "-74px 0px 0px 0px",
