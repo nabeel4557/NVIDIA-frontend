@@ -1,6 +1,7 @@
 import React from "react";
 
 function Ecosystem() {
+    const ImageLoop = [1, 2, 3, 4, 5, 6, 7, 8, 9];
     return (
         <div className="w-full bg-[#fff] py-[75px] max-[540px]:w-full ">
             <div className="w-full max-[1280px]:w-[980px] max-[1280px]:mx-auto max-[1080px]:w-[700px] max-[1080px]:mx-auto max-[786px]:w-[600px] max-[640px]:w-[500px] max-[540px]:w-full">
@@ -16,21 +17,32 @@ function Ecosystem() {
                     infrastructure from our ecosystem.
                 </p>
             </div>
-            <div className="w-full  mt-[10px]">
-                <div className="w-[100%] h-[120px] ">
-                    <img
-                        className="w-full h-full object-cover"
-                        src="images/img10.png"
-                        alt="logos"
-                    />
+            <div className="w-full flex flex-col gap-[10px] overflow-hidden ">
+                <div className=" animate-marquee space-x-4 flex  ">
+                    {[...ImageLoop, ...ImageLoop].map((item, index) => (
+                        <div
+                            key={index}
+                            className="w-[100%] h-[120px] flex-shrink-0 ">
+                            <img
+                                className="w-full h-full object-cover"
+                                src="images/img10.png"
+                                alt="logos"
+                            />
+                        </div>
+                    ))}
                 </div>
-
-                <div className="w-[full] h-[120px]">
-                    <img
-                        className="w-full h-full object-cover"
-                        src="images/img11.png"
-                        alt="logos"
-                    />
+                <div className=" animate-marquee space-x-4 flex  ">
+                    {[...ImageLoop, ...ImageLoop].map((item, index) => (
+                        <div
+                            key={index}
+                            className="w-[full] h-[120px] flex-shrink-0 ">
+                            <img
+                                className="w-full h-full object-cover"
+                                src="images/img11.png"
+                                alt="logos"
+                            />
+                        </div>
+                    ))}
                 </div>
             </div>
         </div>

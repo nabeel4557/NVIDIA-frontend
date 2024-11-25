@@ -5,12 +5,12 @@ import { MdSearch } from "react-icons/md";
 
 function NavbarTop() {
     return (
-        <div className="bg-[#fff] sticky top-0  max-[540px]:w-full">
+        <div className="bg-[#fff]   max-[540px]:w-full">
             <div className="wrapper flex items-center justify-between max-[540px]:w-full">
                 <div className="left w-[250px] flex items-center ">
                     <h1 className="w-[120px]">
                         <Link href="/">
-                            <img src="/images/Logo.jpeg" alt="logo" />
+                            <img className='w-[100%]' src="/images/Logo.jpeg" alt="logo" />
                         </Link>
                     </h1>
                     <span>
