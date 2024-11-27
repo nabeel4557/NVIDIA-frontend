@@ -6,7 +6,7 @@ function Run() {
     return (
         <>
             <div className=" wrapper py-[75px]">
-                <div className="w-[880px] mx-auto justify-center max-[1280px]:w-[780px] max-[1080px]:w-[700px] max-[1080px]:mx-auto max-[786px]:w-[600px] max-[640px]:w-[500px] max-[540px]:w-full max-[480px]:w-full">
+                <div className="w-[70%] mx-auto justify-center max-[1280px]:w-[780px] max-[1080px]:w-[700px] max-[1080px]:mx-auto max-[786px]:w-[600px] max-[640px]:w-[500px] max-[540px]:w-full max-[480px]:w-full">
                     <h6 className="text-center text-[20px] font-bold max-[1280px]:text-[16px]">
                         Run Anywhere
                     </h6>
@@ -20,8 +20,8 @@ function Run() {
                         center and helping to keep your data secure.
                     </p>
                 </div>
-                <div className="w-full max-[1280px]:w-[980px] max-[1280px]:mx-auto max-[1080px]:w-[700px] max-[1080px]:mx-auto max-[1080px]:mt-[20px] max-[786px]:w-[600px] max-[640px]:w-[500px] max-[540px]:w-full">
-                    <img src="/images/img4.jpg" />
+                <div className="w-full max-[1280px]:w-[90%] max-[1280px]:mx-auto max-[1080px]:w-[700px] max-[1080px]:mx-auto max-[1080px]:mt-[20px] max-[786px]:w-[600px] max-[640px]:w-[500px] max-[540px]:w-full">
+                    <img className="w-full" src="/images/img4.jpg" />
                 </div>
                 <div className=" space-y-3 mt-[30px]">
                     <h6 className="flex items-center justify-center text-[18px] font-bold max-[1280px]:text-[16px] max-[1080px]:text-[14px]">
@@ -38,7 +38,7 @@ function Run() {
                     </h6>
                 </div>
 
-                <div className="py-[75px] gap-5  border-b-[2px] border-b-[#202020] w-full flex max-[1280px]:w-[980px] max-[1280px]:mx-auto max-[1080px]:w-[700px] max-[1080px]:mx-auto max-[786px]:w-[600px] max-[640px]:w-[500px] max-[640px]:block max-[540px]:w-full">
+                <div className="py-[75px] gap-5  border-b-[2px] border-b-[#202020] w-full flex max-[1280px]:w-[80%] max-[1280px]:mx-auto max-[1080px]:w-[90%] max-[1080px]:mx-auto max-[786px]:w-[90%] max-[640px]:w-[90%] max-[640px]:block max-[540px]:w-full">
                     <div className="left w-1/2  max-[640px]:w-full max-[540px]:w-full ">
                         <div className="">
                             <h3 className="text-[28px] font-bold max-[1280px]:text-[24px] max-[1080px]:text-[20px]">
@@ -105,8 +105,8 @@ function Run() {
                         </div>
                     </div>
                 </div>
-                <div className="py-[75px] w-full max-[1280px]:w-[980px] max-[1280px]:mx-auto  max-[1080px]:w-[700px] max-[1080px]:mx-auto max-[786px]:w-[600px] max-[640px]:w-[500px] max-[540px]:w-full">
-                    <div className="w-full flex gap-5 max-[640px]:block max-[640px]:w-[500px] max-[540px]:w-full">
+                <div className="py-[75px] w-full max-[1280px]:w-[90%] max-[1280px]:mx-auto  max-[1080px]:w-[90%] max-[1080px]:mx-auto max-[786px]:w-[90%] max-[640px]:w-[500px] max-[540px]:w-full">
+                    <div className="w-full flex gap-5 max-[640px]:block max-[640px]:w-[90%] max-[540px]:w-full">
                         <div className="left-side w-1/2 max-[640px]:w-[500px] max-[540px]:w-full">
                             <div className="w-[96px] h-[96px] mx-auto mb-[20px]">
                                 <img src="/images/svg1.svg" />
@@ -122,7 +122,10 @@ function Run() {
                         </div>
                         <div className="right-side w-1/2 max-[640px]:w-[500px] max-[640px]:mt-[20px] max-[540px]:w-full">
                             <div className="w-[96px] h-[96px] mx-auto mb-[20px]">
-                                <img src="/images/svg2.svg" />
+                                <img
+                                    className="w-full"
+                                    src="/images/svg2.svg"
+                                />
                             </div>
                             <h3 className="text-[24px] font-bold text-center mb-[20px] max-[1280px]:text-[20px] max-[1080px]:text-[18px] ">
                                 Deploy Securely With Confidence
@@ -135,9 +138,9 @@ function Run() {
                             </p>
                         </div>
                     </div>
-                    <div className="w-[850px] mx-auto mt-[40px] max-[1080px]:w-[500px] max-[1080px]:mx-auto max-[640px]:w-[500px] max-[640px]:mx-[0px] max-[540px]:w-full">
+                    <div className="w-[65%] mx-auto mt-[40px] max-[1080px]:w-[65%] max-[1080px]:mx-auto max-[640px]:w-[500px] max-[640px]:mx-[0px] max-[540px]:w-full">
                         <div className="w-[96px] h-[96px] mx-auto mb-[20px]">
-                            <img src="/images/svg3.svg" />
+                            <img className="w-full" src="/images/svg3.svg" />
                         </div>
                         <h3 className="text-[24px] font-bold text-center mb-[20px] max-[1280px]:text-[20px] max-[1080px]:text-[18px]">
                             Lower Costs and Your Carbon Footprint
@@ -152,7 +155,7 @@ function Run() {
                 </div>
             </div>
 
-            <div className="customization py-[75px] bg-[#4D0068] max-[540px]:w-full">
+            <div className="customization py-[75px] bg-[#4D0068] max-[768px]:w-full max-[540px]:w-full">
                 <div className="max-[540px]:w-full">
                     <span className="font-bold text-[#fff] text-[20px] text-center flex justify-center max-[1080px]:text-[16px]">
                         Customization
@@ -162,7 +165,7 @@ function Run() {
                     </h2>
                 </div>
 
-                <div className="w-full flex  wrapper max-[1280px]:w-[980px] max-[1080px]:w-[700px] max-[786px]:w-[600px] max-[640px]:w-[500px]  max-[640px]:block max-[540px]:w-full max-[540px]:px-[15px]">
+                <div className="w-full flex  wrapper max-[1280px]:w-[80%] max-[1080px]:w-[90%] max-[980px]:w-[80%] max-[786px]:w-[80%] max-[640px]:w-[90%]  max-[640px]:block max-[540px]:w-full max-[540px]:px-[15px]">
                     <div className="w-1/2 max-[640px]:w-full">
                         <h2 className="text-[28px] font-bold max-[1280px]:text-[24px] max-[1080px]:text-[20px]">
                             Fine-Tune With NVIDIA NeMo

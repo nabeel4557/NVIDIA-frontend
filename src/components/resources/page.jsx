@@ -11,8 +11,8 @@ function Resources() {
                 <h2 className="text-[36px] text-[#000] font-bold text-center mt-[10px] max-[1280px]:text-[28px] max-[1080px]:text-[24px]">
                     Unlock, Upskill, and Upscale
                 </h2>
-                <div className="w-full flex items-center gap-4 mt-[40px] max-[1280px]:w-[980px] max-[1280px]:mx-auto max-[1080px]:w-[700px] max-[1080px]:mx-auto max-[1080px]:flex-wrap max-[786px]:w-[600px] max-[640px]:w-[500px] max-[640px]:block max-[540px]:w-full">
-                    <div className="w-1/4 bg-[#fff] h-[580px] relative pb-[30px] shadow-lg max-[1080px]:w-[300px] max-[786px]:w-[280px] max-[640px]:w-[500px] max-[540px]:w-full">
+                <div className="w-full flex items-center gap-4 mt-[40px] max-[1280px]:w-[80%] max-[1280px]:mx-auto max-[1080px]:w-[80%] max-[1080px]:justify-center max-[1080px]:flex-wrap max-[786px]:w-full max-[640px]:w-full max-[640px]:block max-[540px]:w-full">
+                    <div className="w-1/4 bg-[#fff] h-[580px] relative pb-[30px] shadow-lg max-[1080px]:w-[300px] max-[786px]:w-[280px] max-[640px]:w-full max-[540px]:w-full">
                         <div className="w-full">
                             <img
                                 className="max-[640px]:w-[500px]"
@@ -139,4 +139,3 @@ function Resources() {
 }
 
 export default Resources;
-

@@ -5,7 +5,7 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 function GetStarted() {
     return (
         <div className="w-full pt-[75px] bg-[#1A1A1A] max-[540px]:w-full">
-            <div className="wrapper w-full max-[1280px]:w-[980px] max-[1080px]:w-[700px] max-[1080px]:mx-auto max-[786px]:w-[600px] max-[640px]:w-[500px] max-[540px]:w-full">
+            <div className="wrapper w-full max-[1280px]:w-[80%] max-[1080px]:w-[90%] max-[1080px]:mx-auto max-[980px]:w-[75%] max-[786px]:w-[80%] max-[640px]:w-[90%] max-[540px]:w-full">
                 <h2 className="text-[36px] text-[#fff] font-bold text-center max-[1280px]:text-[28px] max-[1080px]:text-[24px]">
                     Get Started
                 </h2>
@@ -77,7 +77,7 @@ function GetStarted() {
             <div
                 className="w-full h-[450px]  bg-cover bg-center mt-[40px] py-[75px] "
                 style={{ backgroundImage: `url(/images/img6.jpg) ` }}>
-                <div className="w-full max-[1280px]:w-[1100px] max-[1280px]:mx-auto max-[1080px]:w-[700px] max-[1080px]:mx-auto max-[786px]:w-[600px] max-[640px]:w-[500px] max-[480px]:w-full">
+                <div className="w-full max-[1280px]:w-[80%] max-[1280px]:mx-auto max-[1080px]:w-full max-[1080px]:mx-auto max-[980px]:w-[75%] max-[786px]:w-[90%] max-[640px]:w-full max-[480px]:w-full">
                     <div className="wrapper max-[1280px]:left-0 max-[540px]:w-full max-[540px]:p-[15px] max-[480px]:w-full">
                         <div className="w-1/2 max-[640px]:w-[500px] max-[540px]:w-full max-[480px]:w-full">
                             <h2 className="text-[36px] font-bold text-[#fff] max-[1280px]:text-[28px] max-[1080px]:text-[24px] max-[786px]:w-[300px] max-[640px]:w-full ">
@@ -97,7 +97,6 @@ function GetStarted() {
                                     color="#76B900"
                                     size={30}
                                 />
-                                
                             </span>
                         </div>
                     </div>

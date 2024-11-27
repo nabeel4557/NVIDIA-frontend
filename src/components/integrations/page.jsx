@@ -4,7 +4,7 @@ import { MdKeyboardArrowRight } from "react-icons/md";
 function Integrations() {
     return (
         <div>
-            <div className="wrapper max-[1280px]:w-[980px] max-[1080px]:w-[700px] max-[980px]:w-[700px] max-[980px]:mx-auto max-[786px]:w-[600px] max-[640px]:w-full max-[540px]:w-[480px] max-[480px]:w-full max-[480px]:px-[10px]">
+            <div className="wrapper max-[1280px]:w-[80%] max-[1080px]:w-[80%] max-[980px]:w-[70%] max-[980px]:mx-auto max-[786px]:w-[75%] max-[640px]:w-full max-[540px]:w-[80%] max-[480px]:w-full max-[480px]:px-[10px]">
                 <div className=" max-[640px]:mt-[20px]">
                     <h6 className="text-[20px] font-bold text-center max-[1280px]:text-[18px] max-[1080px]:text-[16px]">
                         Integrations
@@ -16,9 +16,9 @@ function Integrations() {
                         Get up and running quickly with familiar APIs.
                     </p>
                 </div>
-                <div className="flex items-center w-full py-[45px] max-[640px]:w-full max-[640px]:block max-[540px]:w-[480px] max-[480px]:w-full">
+                <div className="flex items-center w-full py-[45px] max-[640px]:w-full max-[640px]:block max-[540px]:w-full max-[480px]:w-full">
                     <div className="w-1/2 max-[640px]:w-[500px] max-[640px]:mx-auto max-[540px]:w-full">
-                        <img src="/images/img1.jpeg" />
+                        <img className="w-[100%]" src="/images/img1.jpeg" />
                     </div>
                     <div className="w-1/2 max-[640px]:w-[500px] max-[640px]:mx-auto max-[540px]:w-full">
                         <h3 className="font-bold text-[28px] max-[1280px]:text-[24px]  max-[980px]:text-[20px] ">
@@ -30,7 +30,7 @@ function Integrations() {
                         </p>
                     </div>
                 </div>
-                <div className="flex w-full py-[45px] items-center max-[640px]:block">
+                <div className="flex items-center w-full py-[45px] max-[640px]:w-full max-[640px]:block max-[540px]:w-full max-[480px]:w-full">
                     <div className="w-1/2 max-[640px]:w-[500px] max-[640px]:mx-auto max-[540px]:w-full">
                         <h3 className="font-bold text-[28px] max-[1280px]:text-[24px]  max-[980px]:text-[20px] ">
                             Use the Tools You Love
@@ -52,12 +52,12 @@ function Integrations() {
                         </h5>
                     </div>
                     <div className="w-[1/2] max-[786px]:w-[300px] max-[640px]:w-[500px] max-[640px]:mx-auto max-[540px]:w-full">
-                        <img src="/images/img2.jpeg" />
+                        <img  src="/images/img2.jpeg" />
                     </div>
                 </div>
-                <div className="w-full flex items-center py-[45px] max-[640px]:block">
+                <div className="flex items-center w-full py-[45px] max-[640px]:w-full max-[640px]:block max-[540px]:w-full max-[480px]:w-full">
                     <div className="w-1/2 max-[640px]:w-[500px] max-[640px]:mx-auto  max-[540px]:w-full">
-                        <img src="/images/img3.jpeg" />
+                        <img className='w-[100%]' src="/images/img3.jpeg" />
                     </div>
                     <div className="w-1/2 max-[640px]:w-[500px] max-[640px]:mx-auto max-[540px]:w-full">
                         <h3 className="text-[28px] font-bold max-[1280px]:text-[24px] max-[980px]:text-[20px]">
