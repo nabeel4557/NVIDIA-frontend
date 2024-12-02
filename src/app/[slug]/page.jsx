@@ -4,6 +4,7 @@ import { useParams } from "next/navigation";
 import NavbarTop from "../../components/includes/navbar/NavbarTop";
 import DetailsGrid from '../../components/details-grid/page'
 import Overview from '../../components/overview/page'
+import Action from '../../components/action/page'
 
 function UseCasesPage() {
     const [isNavbarTopVisible, setIsNavbarTopVisible] = useState(true);
@@ -45,7 +46,12 @@ function UseCasesPage() {
             <div>
                 <DetailsGrid/>
             </div>
-            <Overview/>
+            <div>
+                <Overview/>
+            </div>
+            <div>
+                <Action/>
+            </div>
         </div>
     );
 }
