@@ -1,66 +1,17 @@
-// "use client";
-// import React from "react";
-// import Spotlight from "../spotlight/page";
-// import Integrations from "../integrations/page";
-// import Run from "../run/page";
-// import GetStarted from "../getstarted/page";
-// import Case from "../case/page";
-// import Ecosystem from "../ecosystem/page";
-// import Resources from "../resources/page";
-// import Documentation from "../documentation/page";
-// import Models from "../models/page";
-// function HomePage() {
-//     return (
-//         <div>
-//             <div id="spotlight">
-//                 <Spotlight />
-//             </div>
-//             <div id="models">
-//                 <Models />
-//             </div>
-//             <div id="integrations">
-//                 <Integrations />
-//             </div>
-//             <div id="run">
-//                 <Run />
-//             </div>
-//             <div id="get-started">
-//                 <GetStarted />
-//             </div>
-//             <div id="case">
-//                 <Case />
-//             </div>
-//             <div id="ecosystem">
-//                 <Ecosystem />
-//             </div>
-//             <div id="resources">
-//                 <Resources />
-//             </div>
-//             <div id="documentation">
-//                 <Documentation />
-//             </div>
-//         </div>
-//     );
-// }
-
-// export default HomePage;
-
-
-
 "use client";
 import React, { useRef, useState, useEffect } from "react";
-import Spotlight from "../spotlight/page";
-import Integrations from "../integrations/page";
-import Run from "../run/page";
-import GetStarted from "../getstarted/page";
-import Case from "../case/page";
-import Ecosystem from "../ecosystem/page";
-import Resources from "../resources/page";
-import Documentation from "../documentation/page";
-import Models from "../models/page";
-import Navbar3 from "../includes/navbar/Navbar3";
+import Spotlight from "../components/spotlight/page";
+import Integrations from "../components/integrations/page";
+import Run from "../components/run/page";
+import GetStarted from "../components/getstarted/page";
+import Case from "../components/case/page";
+import Ecosystem from "../components/ecosystem/page";
+import Resources from "../components/resources/page";
+import Documentation from "../components/documentation/page";
+import Models from "../components/models/page";
+import Navbar3 from "../components/includes/navbar/Navbar3";
 
-function HomePage() {
+function Home() {
     const sectionRefs = {
         spotlight: useRef(null),
         models: useRef(null),
@@ -134,5 +85,4 @@ function HomePage() {
     );
 }
 
-export default HomePage;
-
+export default Home;

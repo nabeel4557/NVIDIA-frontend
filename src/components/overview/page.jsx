@@ -49,9 +49,9 @@ function Overview() {
     return (
         <div className="w-full bg-[#fff] text-[#000] py-[75px]">
             <div className="wrapper">
-                <div className="w-full flex py-[30px] justify-between">
+                <div className="w-full flex py-[30px] justify-between max-[1280px]:w-[88%] max-[1280px]:mx-auto">
                     <div className="left w-[55%]">
-                        <nav className="w-[80%] border-b-2 border-[#EEEEEE]">
+                        <nav className="w-[80%] border-b-2 border-[#EEEEEE] max-[1280px]:w-[90%]">
                             <ul className="flex items-center w-full gap-5">
                                 {tabs.map((tab) => (
                                     <li key={tab.name}>
@@ -73,17 +73,17 @@ function Overview() {
                         <div className="w-full">
                             {tabs.map((item) => (
                                 <>
-                                    <h3 className="text-[36px] font-bold leading-10">
+                                    <h3 className="text-[36px] font-bold leading-10 max-[1280px]:text-[28px]">
                                         {item.title}
                                     </h3>
-                                    <p className="py-[10px] text-[#1A1A1A]">
+                                    <p className="py-[10px] text-[#1A1A1A] max-[1280px]:text-[15px]">
                                         {item.paragraph}
                                     </p>
                                 </>
                             ))}
                         </div>
                     </div>
-                    <div className=" w-[37%]  relative">
+                    <div className=" w-[37%]  relative max-[1400px]:w-[30%]">
                         <div className=" right w-full absolute top-24">
                             <p className="text-[#1A1A1A] text-[15px]">
                                 Quick Links
@@ -91,7 +91,7 @@ function Overview() {
                             <div className="w-full mt-[20px] justify-end">
                                 {Links.map((link) => (
                                     <span className="">
-                                        <p className="w-auto text-[16px] font-bold left-0 py-[10px] cursor-pointer ">
+                                        <p className="w-auto text-[16px] font-bold left-0 py-[10px] cursor-pointer max-[1280px]:text-[14px]">
                                             {link.button}
                                             <span>
                                                 <MdKeyboardArrowRight

@@ -2,9 +2,9 @@
 import React, { useState } from "react";
 import { useParams } from "next/navigation";
 import NavbarTop from "../../components/includes/navbar/NavbarTop";
-import DetailsGrid from '../../components/details-grid/page'
-import Overview from '../../components/overview/page'
-import Action from '../../components/action/page'
+import DetailsGrid from "../../components/details-grid/page";
+import Overview from "../../components/overview/page";
+import Action from "../../components/action/page";
 import { Helmet } from "react-helmet";
 
 function UseCasesPage() {
@@ -37,11 +37,11 @@ function UseCasesPage() {
                             backgroundImage: "url('/images/digitalHuman.jpg')",
                             backgroundSize: "cover",
                         }}>
-                        <div className=" absolute left-0 pl-[50px] ">
-                            <h1 className="text-[#000] text-[48px] font-bold">
+                        <div className=" absolute left-0 pl-[50px] max-[1280px]:left-24 ">
+                            <h1 className="text-[#000] text-[48px] font-bold max-[1280px]:text-[36px]">
                                 Digital Humans
                             </h1>
-                            <p className="text-[#1A1A1A] text-[22px] py-[10px]">
+                            <p className="text-[#1A1A1A] text-[22px] py-[10px] max-[1280px]:text-[20px]">
                                 Bring digital avatars to life with generative
                                 AI.
                             </p>
