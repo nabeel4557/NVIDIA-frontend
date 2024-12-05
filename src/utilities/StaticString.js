@@ -5,6 +5,7 @@ export const dynamicData = [
         image: '/images/img7.jpeg',
         subTitle: 'Bring digital avatars to life with generative AI.',
         bgImage: '/images/digitalHuman.jpg',
+        bgImageMob:'/images/MobileScreen1.jpg',
         detailPoints: [
             {
                 title: 'Workloads',
@@ -106,6 +107,7 @@ export const dynamicData = [
         image: '/images/img8.jpeg',
         subTitle: 'Generative AI can recognize, summarize, translate, predict, and generate text and other forms of content.',
         bgImage: '/images/content.jpg',
+        bgImageMob:'/images/MobileScreen2.jpg',
         detailPoints: [
             {
                 title: 'Workloads',
@@ -247,6 +249,7 @@ export const dynamicData = [
         image: '/images/img9.jpeg',
         subTitle: 'Deploy generative AI for virtual screening.',
         bgImage: '/images/biomolecular.jpg',
+        bgImageMob:'/images/MobileScreen3.jpg',
         detailPoints: [
             {
                 title: 'Workloads',
