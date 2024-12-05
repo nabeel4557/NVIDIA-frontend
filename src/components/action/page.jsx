@@ -2,7 +2,7 @@ import React from "react";
 
 function Action() {
     return (
-        <div className="w-full bg-[#EEEEEE] py-[75px]">
+        <div className="w-full bg-[#EEEEEE] py-[75px] max-[640px]:py-[30px]">
             <div className="wrapper">
                 <div className="w-[63%] mx-auto max-[980px]:w-[75%] max-[768px]:w-[95%]">
                     <h2 className="text-[36px] font-bold text-[#000] text-center max-[1280px]:text-[28px] max-[768px]:text-[24px]">

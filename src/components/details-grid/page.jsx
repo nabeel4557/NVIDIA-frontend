@@ -2,7 +2,7 @@ import React from "react";
 
 function DetailsGrid({ slug }) {
     return (
-        <div className="w-full py-[75px] bg-[#EEEEEE] text-[#1A1A1A] ">
+        <div className="w-full py-[75px] max-[640px]:py-[20px] bg-[#EEEEEE] text-[#1A1A1A] ">
             <div className="wrapper  ">
                 <div className="w-full flex items-start max-[1280px]:px-[75px] max-[1080px]:px-[0px] max-[980px]:w-[75%] max-[768px]:w-[95%] max-[540px]: max-[980px]:mx-auto max-[980px]:flex-wrap">
                     {slug.detailPoints.map((item) => (

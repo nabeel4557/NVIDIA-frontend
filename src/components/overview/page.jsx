@@ -9,17 +9,17 @@ function Overview({ slug }) {
     const [activeFaq, setActiveFaq] = useState();
 
     return (
-        <div className="w-full bg-[#fff] text-[#000] py-[75px]  max-[540px]:h-auto">
+        <div className="w-full bg-[#fff] text-[#000] py-[75px] max-[640px]:py-[10px]  max-[540px]:h-auto">
             <div className="wrapper">
                 <div className="w-full  py-[30px] justify-between max-[1280px]:w-[88%] max-[1280px]:mx-auto max-[1080px]:w-full max-[980px]:w-[75%] max-[768px]:w-[95%]  max-[540px]:">
-                    <div className="left w-[55%] max-[980px]:w-auto">
+                    <div className="left w-[55%] max-[980px]:w-auto max-[540px]:w-[100%]">
                         <nav className="w-[80%] border-b-2 border-[#EEEEEE] max-[1280px]:w-[90%] max-[980px]:w-full">
                             <ul className="flex items-center w-full gap-5">
                                 {slug?.titles?.map((tab, index) => (
                                     <li key={index}>
                                         <button
                                             onClick={() => setActiveTab(tab)}
-                                            className={`text-[18px] ${
+                                            className={`text-[18px] max-[480px]:text-[14px] ${
                                                 activeTab == tab
                                                     ? "font-bold border-b-2 border-[#76B900]"
                                                     : ""
@@ -65,7 +65,7 @@ function Overview({ slug }) {
                                     </>
                                 </div>
                                 <div className=" w-[38%] relative max-[1080px]:w-[35%] max-[980px]:w-[40%] max-[640px]:w-[100%] ">
-                                    <div className=" right w-full  absolute top-[35px]  max-[640px]:w-[100%] ">
+                                    <div className=" right w-full  absolute top-[35px] max-[640px]:relative max-[640px]:top-0  max-[640px]:w-[100%] ">
                                         <p className="text-[#1A1A1A] text-[15px]">
                                             Quick Links
                                         </p>
@@ -129,7 +129,7 @@ function Overview({ slug }) {
                                     </>
                                 </div>
                                 <div className=" w-[38%]  relative  max-[1080px]:w-[35%] max-[980px]:w-[40%]  max-[640px]:w-full">
-                                    <div className=" right w-full  absolute top-[35px]  max-[540px]:w-[100%]">
+                                    <div className=" right w-full  absolute top-[35px] max-[640px]:relative max-[640px]:top-0  max-[540px]:w-[100%]">
                                         <p className="text-[#1A1A1A] text-[15px] ">
                                             Quick Links
                                         </p>
@@ -213,7 +213,7 @@ function Overview({ slug }) {
                                     ))}
                                 </div>
                                 <div className=" w-[38%]  relative  max-[1080px]:w-[35%] max-[980px]:w-[40%]  max-[640px]:w-full">
-                                    <div className=" right w-full  absolute top-[35px] max-[640px]:w-full">
+                                    <div className=" right w-full  absolute top-[35px] max-[640px]:relative max-[640px]:top-0 max-[640px]:w-full">
                                         <p className="text-[#1A1A1A] text-[15px] ">
                                             Quick Links
                                         </p>

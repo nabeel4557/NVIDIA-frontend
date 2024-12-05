@@ -26,8 +26,8 @@ function UseCasesPage() {
                         isNavbarTopVisible ? "top-0" : "-top-[43.5px]"
                     }`}>
                     <NavbarTop />
-                    <header className="px-[68px] w-full bg-[#000] h-[66px] max-[980px]:h-[46px] fixed  z-40">
-                        <h2 className="text-[28px] max-[1080px]:text-[24px] max-[980px]:text-[20px] max-[1080px]:pt- font-bold flex items-center pt-[10px] text-white">
+                    <header className="px-[68px] max-[640px]:px-[20px] w-full bg-[#000] h-[66px] max-[980px]:h-[46px] fixed  z-40">
+                        <h2 className="text-[28px] max-[1080px]:text-[24px] max-[980px]:text-[20px] max-[640px]:text-[18px] max-[1080px]:pt- font-bold flex items-center pt-[10px] text-white">
                             Use Cases
                         </h2>
                     </header>
@@ -41,10 +41,20 @@ function UseCasesPage() {
                             backgroundSize: "cover",
                         }}>
                         <div className="w-[47%] absolute left-0 pl-[50px]  max-[1280px]:left-24 max-[1080px]:left-0 max-[1080px]:w-[42%] max-[980px]:w-[38%] max-[768px]:w-[46%] max-[640px]:w-[100%] max-[640px]:top-40 max-[980px]:left-24 max-[768px]:left-0">
-                            <h1 className="text-[#000] text-[48px] font-bold max-[1280px]:text-[36px] max-[980px]:text-[28px]">
+                            <h1
+                                className={`text-[48px] font-bold max-[1280px]:text-[36px] max-[980px]:text-[28px] ${
+                                    slug == 1 || slug == 2
+                                        ? "text-white"
+                                        : "text-[#000]"
+                                }`}>
                                 {dynamicData?.[slug]?.title}
                             </h1>
-                            <p className="text-[#1A1A1A] text-[22px] py-[10px] max-[1280px]:text-[20px] max-[980px]:text-[18px]">
+                            <p
+                                className={`text-[22px] py-[10px] max-[1280px]:text-[20px] max-[980px]:text-[18px] ${
+                                    slug == 1 || slug == 2
+                                        ? "text-white"
+                                        : "text-[#1A1A1A]"
+                                }`}>
                                 {dynamicData?.[slug]?.subTitle}
                             </p>
                         </div>
