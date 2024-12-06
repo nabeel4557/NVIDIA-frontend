@@ -1,6 +1,6 @@
 "use client";
 import React, { useRef, useState, useEffect } from "react";
-import Spotlight from "../components/spotlight/page";
+import Spotlight from "../components/Spotlight";
 import Integrations from "../components/integrations/page";
 import Run from "../components/run/page";
 import GetStarted from "../components/getstarted/page";
