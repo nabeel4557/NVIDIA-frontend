@@ -52,12 +52,12 @@ function Integrations() {
                         </h5>
                     </div>
                     <div className="w-[1/2] max-[786px]:w-[300px] max-[640px]:w-[500px] max-[640px]:mx-auto max-[540px]:w-full">
-                        <img  src="/images/img2.jpeg" />
+                        <img src="/images/img2.jpeg" />
                     </div>
                 </div>
                 <div className="flex items-center w-full py-[45px] max-[640px]:w-full max-[640px]:block max-[540px]:w-full max-[480px]:w-full">
                     <div className="w-1/2 max-[640px]:w-[500px] max-[640px]:mx-auto  max-[540px]:w-full">
-                        <img className='w-[100%]' src="/images/img3.jpeg" />
+                        <img className="w-[100%]" src="/images/img3.jpeg" />
                     </div>
                     <div className="w-1/2 max-[640px]:w-[500px] max-[640px]:mx-auto max-[540px]:w-full">
                         <h3 className="text-[28px] font-bold max-[1280px]:text-[24px] max-[980px]:text-[20px]">

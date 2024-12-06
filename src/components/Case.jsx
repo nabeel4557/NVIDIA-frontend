@@ -1,9 +1,9 @@
 import Link from "next/link";
 import React from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
-import { dynamicData } from "../../utilities/StaticString";
+import { dynamicData } from "../utilities/StaticString";
 import Image from "next/image";
-import LinkArrow from '../LinkArrow'
+import LinkArrow from "../components/LinkArrow";
 
 function Case() {
     return (
@@ -38,8 +38,7 @@ function Case() {
                                     {item?.description}
                                 </p>
 
-                                    <LinkArrow index={index} />
-                                    
+                                <LinkArrow index={index} />
                             </div>
                         </div>
                     ))}

@@ -1,7 +1,6 @@
 import React from "react";
 import { FaCheck } from "react-icons/fa";
 import { MdKeyboardArrowRight } from "react-icons/md";
-import LinkArrow from "../LinkArrow";
 import Link from "next/link";
 
 function GetStarted() {

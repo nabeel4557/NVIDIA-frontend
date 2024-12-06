@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
-import LinkArrow from "../LinkArrow";
+import LinkArrow from "../components/LinkArrow";
 
 function Resources() {
     const cardItems = [
@@ -62,8 +62,7 @@ function Resources() {
                                 <p className="text-[#1A1A1A] text-[15px]">
                                     {item.description}
                                 </p>
-                                <LinkArrow   />
-                                
+                                <LinkArrow />
                             </div>
                         </div>
                     ))}

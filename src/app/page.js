@@ -1,14 +1,14 @@
 "use client";
 import React, { useRef, useState, useEffect } from "react";
 import Spotlight from "../components/Spotlight";
-import Integrations from "../components/integrations/page";
-import Run from "../components/run/page";
-import GetStarted from "../components/getstarted/page";
-import Case from "../components/case/page";
-import Ecosystem from "../components/ecosystem/page";
-import Resources from "../components/resources/page";
-import Documentation from "../components/documentation/page";
-import Models from "../components/models/page";
+import Integrations from "../components/Integration";
+import Run from "../components/Run";
+import GetStarted from "../components/GetStarted";
+import Case from "../components/Case";
+import Ecosystem from "../components/Ecosystem";
+import Resources from "../components/Resources";
+import Documentation from "../components/Documentation";
+import Models from "../components/Models";
 import Navbar3 from "../components/includes/navbar/Navbar3";
 
 function Home() {
