@@ -6,7 +6,7 @@ import { FiPlay } from "react-icons/fi";
 function Spotlight() {
     return (
         <>
-            <div className="w-full relative py-12 justify-center h-[500px] overflow-hidden max-[640px]:w-[60%]  max-[540px]:w-full mt-[150px]">
+            <div className="w-full relative py-12 justify-center h-[500px] overflow-hidden max-[640px]:w-[60%]  max-[540px]:w-full mt-[160px]">
                 <video
                     className="absolute top-0 left-0 w-full h-[450px] object-cover z-0 max-[640px]:hidden"
                     autoPlay
