@@ -1,6 +1,8 @@
 import React from "react";
 import { FaCheck } from "react-icons/fa";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import LinkArrow from "../LinkArrow";
+import Link from "next/link";
 
 function GetStarted() {
     const cardItem = [
@@ -69,14 +71,16 @@ function GetStarted() {
                                 build, fine-tune, and deploy custom models for
                                 your enterprise applications.
                             </p>
-                            <span className="text-[18px] font-bold mt-[25px] inline-block flex items-center max-[1280px]:text-[16px] max-[1080px]:text-[14px]">
+                            
+
+                            <Link href={'#'} className="text-[18px] font-bold mt-[25px]  flex items-center max-[1280px]:text-[16px] max-[1080px]:text-[14px]">
                                 Get Started{" "}
                                 <MdKeyboardArrowRight
                                     className="max-[1280px]:size-[24px]"
                                     color="#76B900"
                                     size={30}
                                 />
-                            </span>
+                            </Link>
                         </div>
                     </div>
                 </div>

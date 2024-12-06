@@ -19,3 +19,7 @@ body {
     background-color: black;
     color: white;
 }
+
+.navbar {
+    transition: top 0.3s ease-in-out;
+  }

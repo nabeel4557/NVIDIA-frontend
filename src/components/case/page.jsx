@@ -3,6 +3,7 @@ import React from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { dynamicData } from "../../utilities/StaticString";
 import Image from "next/image";
+import LinkArrow from '../LinkArrow'
 
 function Case() {
     return (
@@ -36,16 +37,9 @@ function Case() {
                                 <p className="text-[15px] text-[#1a1a1a77] mt-[30px]">
                                     {item?.description}
                                 </p>
-                                <Link
-                                    href={`${index}`}
-                                    className="flex items-center text-[18px] font-bold absolute bottom-[30px] z-10 max-[1280px]:text-[16px] ">
-                                    Learn More
-                                    <MdKeyboardArrowRight
-                                        size={30}
-                                        color="#768900"
-                                        className="max-[1280px]:size-[24px]"
-                                    />
-                                </Link>
+
+                                    <LinkArrow index={index} />
+                                    
                             </div>
                         </div>
                     ))}

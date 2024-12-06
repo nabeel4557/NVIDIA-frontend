@@ -1,12 +1,12 @@
 "use client";
 import React, { useState } from "react";
 import { useParams } from "next/navigation";
-import NavbarTop from "../../components/includes/navbar/NavbarTop";
-import DetailsGrid from "../../components/details-grid/page";
-import Overview from "../../components/overview/page";
-import Action from "../../components/action/page";
+import NavbarTop from "../../../components/includes/navbar/NavbarTop";
+import DetailsGrid from "../../../components/details-grid/page";
+import Overview from "../../../components/overview/page";
+import Action from "../../../components/action/page";
 import { Helmet } from "react-helmet";
-import { dynamicData } from "../../utilities/StaticString";
+import { dynamicData } from "../../../utilities/StaticString";
 
 function UseCasesPage() {
     const [isNavbarTopVisible, setIsNavbarTopVisible] = useState(true);
@@ -16,23 +16,12 @@ function UseCasesPage() {
 
     return (
         <>
+            
             <Helmet>
                 <title>{dynamicData?.[slug]?.title}</title>
             </Helmet>
             <div className="w-full">
-                <div
-                    className={`z-50 bg-black w-full fixed left-0 transition-all duration-300 ${
-                        isNavbarTopVisible ? "top-0" : "-top-[43.5px]"
-                    }`}>
-                    <NavbarTop />
-                    <header className="px-[68px] max-[640px]:px-[20px] w-full bg-[#000] h-[66px] max-[980px]:h-[46px] fixed z-40">
-                        <h2 className="text-[28px] max-[1080px]:text-[24px] max-[980px]:text-[20px] max-[640px]:text-[18px] font-bold flex items-center pt-[10px] text-white">
-                            Use Cases
-                        </h2>
-                    </header>
-                </div>
-
-                <div className="w-full mt-[120px] bg-[#fff] text-[#000]">
+                <div className="w-full  bg-[#fff] text-[#000]">
                     <div>
                         <div
                             className="bg-no-repeat bg-center h-[700px] max-[980px]:h-[550px] flex items-center justify-center max-[640px]:hidden"

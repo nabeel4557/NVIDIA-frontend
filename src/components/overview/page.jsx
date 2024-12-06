@@ -1,36 +1,56 @@
 import Link from "next/link";
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { IoIosArrowDown } from "react-icons/io";
+import QuickLink from '../QuickLink'
 
 function Overview({ slug }) {
     const [activeTab, setActiveTab] = useState("Overview");
 
     const [activeFaq, setActiveFaq] = useState();
+    const [activeTabWidth, setActiveTabWidth] = useState(0);
+    const [activeTabOffset, setActiveTabOffset] = useState(0);
+    const tabsRef = useRef([]);
+
+    useEffect(() => {
+        const activeTabIndex = slug?.titles?.indexOf(activeTab);
+
+        if (tabsRef.current[activeTabIndex]) {
+            const activeTabElement = tabsRef.current[activeTabIndex];
+            setActiveTabWidth(activeTabElement.offsetWidth);
+            setActiveTabOffset(activeTabElement.offsetLeft);
+        }
+    }, [activeTab, slug]);
 
     return (
         <div className="w-full bg-[#fff] text-[#000] py-[75px] max-[640px]:py-[10px]  max-[540px]:h-auto">
             <div className="wrapper">
                 <div className="w-full  py-[30px] justify-between max-[1280px]:w-[88%] max-[1280px]:mx-auto max-[1080px]:w-full max-[980px]:w-[75%] max-[768px]:w-[95%]  max-[540px]:">
                     <div className="left w-[55%] max-[980px]:w-auto max-[540px]:w-[100%]">
-                        <nav className="w-[80%] border-b-2 border-[#EEEEEE] max-[1280px]:w-[90%] max-[980px]:w-full">
-                            <ul className="flex items-center w-full gap-5">
+                        <nav className="w-[80%]  max-[1280px]:w-[90%] max-[980px]:w-full relative">
+                            <ul className="flex items-center w-full ">
                                 {slug?.titles?.map((tab, index) => (
-                                    <li key={index}>
+                                    <li key={index} className="relative px-5 border-b-2 border-[#EEEEEE]" ref={(el) => (tabsRef.current[index] = el)}>
                                         <button
                                             onClick={() => setActiveTab(tab)}
-                                            className={`text-[18px] max-[480px]:text-[14px] ${
-                                                activeTab == tab
-                                                    ? "font-bold border-b-2 border-[#76B900]"
-                                                    : ""
-                                            }`}>
+                                            className={`text-[18px] max-[480px]:text-[14px] ${activeTab === tab ? "font-bold text-black" : "text-gray-500"
+                                                }`}
+                                        >
                                             {tab}
                                         </button>
                                     </li>
                                 ))}
                             </ul>
+                            <span
+                                className="absolute bottom-[-1px] left-0 h-[2px] bg-[#76B900] transition-all duration-300 ease-in-out"
+                                style={{
+                                    width: `${activeTabWidth}px`,
+                                    transform: `translateX(${activeTabOffset}px)`
+                                }}
+                            ></span>
                         </nav>
                     </div>
+
                     <div>
                         {activeTab == "Overview" && (
                             <div className="flex  w-full gap-[100px] max-[640px]:block">
@@ -72,20 +92,8 @@ function Overview({ slug }) {
                                         <div className="w-full mt-[20px] justify-end">
                                             {slug?.Overview?.quickLink.map(
                                                 (link) => (
-                                                    <Link
-                                                        href={"/"}
-                                                        className="flex items-center mb-6">
-                                                        <p className="w-auto text-[14px] font-bold  left-0  cursor-pointer max-[1280px]:text-[14px]">
-                                                            {link}
-                                                            <span>
-                                                                <MdKeyboardArrowRight
-                                                                    color="#76B900"
-                                                                    size={22}
-                                                                    className=" justify-start items-end inline-flex"
-                                                                />
-                                                            </span>
-                                                        </p>
-                                                    </Link>
+                                                    <QuickLink link={link}  />
+
                                                 )
                                             )}
                                         </div>
@@ -136,20 +144,8 @@ function Overview({ slug }) {
                                         <div className="w-full mt-[20px] justify-end">
                                             {slug?.Technical?.quickLink?.map(
                                                 (link) => (
-                                                    <Link
-                                                        href={"/"}
-                                                        className="flex items-center mb-6">
-                                                        <p className="w-auto text-[14px] font-bold  left-0  cursor-pointer max-[1280px]:text-[14px]">
-                                                            {link}
-                                                            <span>
-                                                                <MdKeyboardArrowRight
-                                                                    color="#76B900"
-                                                                    size={22}
-                                                                    className=" justify-start items-end inline-flex"
-                                                                />
-                                                            </span>
-                                                        </p>
-                                                    </Link>
+                                                    <QuickLink link={link}  />
+                                                    
                                                 )
                                             )}
                                         </div>
@@ -174,13 +170,15 @@ function Overview({ slug }) {
                                                 <h3 className=" py-[17px] max-[980px]:py-[13px] text-[20px] text-left font-bold leading-10 max-[1280px]:text-[18px] max-[980px]:text-[16px] max-[980px]:w-[90%]">
                                                     {item?.title}
                                                 </h3>
-                                                <span className="text-[30px] max-[980px]:text-[20px]">
-                                                    <IoIosArrowDown />
+                                                <span
+                                                    className={`${activeFaq == index ? "transform rotate-180" : ""
+                                                        } text-[30px] max-[980px]:text-[20px] transition-transform duration-300 ease-in-out`}
+                                                >                                                    <IoIosArrowDown />
                                                 </span>
                                             </button>
                                             {activeFaq == index && (
-                                                <div>
-                                                    <div className="mt-5">
+                                                <div className="">
+                                                    <div className="my-2">
                                                         <p className=" text-[#1A1A1A] max-[1280px]:text-[15px]">
                                                             {item.content}
                                                         </p>
@@ -220,20 +218,8 @@ function Overview({ slug }) {
                                         <div className="w-full mt-[20px] justify-end">
                                             {slug?.faq?.quickLink.map(
                                                 (link) => (
-                                                    <Link
-                                                        href={"/"}
-                                                        className="flex items-center mb-6">
-                                                        <p className="w-auto text-[14px] font-bold  left-0  cursor-pointer max-[1280px]:text-[14px]">
-                                                            {link}
-                                                            <span>
-                                                                <MdKeyboardArrowRight
-                                                                    color="#76B900"
-                                                                    size={22}
-                                                                    className=" justify-start items-end inline-flex"
-                                                                />
-                                                            </span>
-                                                        </p>
-                                                    </Link>
+                                                    <QuickLink link={link} />
+                                                    
                                                 )
                                             )}
                                         </div>
