@@ -27,12 +27,12 @@ function Overview({ slug }) {
             <div className="wrapper">
                 <div className="w-full  py-[30px] justify-between max-[1280px]:w-[88%] max-[1280px]:mx-auto max-[1080px]:w-full max-[980px]:w-[75%] max-[768px]:w-[95%]  max-[540px]:">
                     <div className="left w-[55%] max-[980px]:w-auto max-[540px]:w-[100%]">
-                        <nav className="w-[80%]  max-[1280px]:w-[90%] max-[980px]:w-full relative">
-                            <ul className="flex items-center w-full ">
+                        <nav className="w-[80%]  max-[1280px]:w-[90%] max-[980px]:w-full max-[540px]:w-full relative">
+                            <ul className="flex items-center w-full max-[540px]:w-full ">
                                 {slug?.titles?.map((tab, index) => (
                                     <li
                                         key={index}
-                                        className="relative px-5 border-b-2 border-[#EEEEEE]"
+                                        className="relative px-5 border-b-2 border-[#EEEEEE] max-[540px]:px-2 "
                                         ref={(el) =>
                                             (tabsRef.current[index] = el)
                                         }>

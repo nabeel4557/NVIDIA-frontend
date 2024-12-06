@@ -19,7 +19,7 @@ function UseCasesPage() {
             <Helmet>
                 <title>{dynamicData?.[slug]?.title}</title>
             </Helmet>
-            <div className="w-full">
+            <div className="w-full max-[640px]:pt-[100px]">
                 <div className="w-full  bg-[#fff] text-[#000]">
                     <div>
                         <div
