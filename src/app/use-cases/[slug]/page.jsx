@@ -1,10 +1,9 @@
 "use client";
 import React, { useState } from "react";
 import { useParams } from "next/navigation";
-import NavbarTop from "../../../components/includes/navbar/NavbarTop";
-import DetailsGrid from "../../../components/details-grid/page";
-import Overview from "../../../components/overview/page";
-import Action from "../../../components/action/page";
+import DetailsGrid from "../../../components/DetailsGrid";
+import Overview from "../../../components/Overview";
+import Action from "../../../components/Action";
 import { Helmet } from "react-helmet";
 import { dynamicData } from "../../../utilities/StaticString";
 

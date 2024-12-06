@@ -2,7 +2,7 @@ import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { IoIosArrowDown } from "react-icons/io";
-import QuickLink from '../QuickLink'
+import QuickLink from "../components/QuickLink";
 
 function Overview({ slug }) {
     const [activeTab, setActiveTab] = useState("Overview");
@@ -30,12 +30,19 @@ function Overview({ slug }) {
                         <nav className="w-[80%]  max-[1280px]:w-[90%] max-[980px]:w-full relative">
                             <ul className="flex items-center w-full ">
                                 {slug?.titles?.map((tab, index) => (
-                                    <li key={index} className="relative px-5 border-b-2 border-[#EEEEEE]" ref={(el) => (tabsRef.current[index] = el)}>
+                                    <li
+                                        key={index}
+                                        className="relative px-5 border-b-2 border-[#EEEEEE]"
+                                        ref={(el) =>
+                                            (tabsRef.current[index] = el)
+                                        }>
                                         <button
                                             onClick={() => setActiveTab(tab)}
-                                            className={`text-[18px] max-[480px]:text-[14px] ${activeTab === tab ? "font-bold text-black" : "text-gray-500"
-                                                }`}
-                                        >
+                                            className={`text-[18px] max-[480px]:text-[14px] ${
+                                                activeTab === tab
+                                                    ? "font-bold text-black"
+                                                    : "text-gray-500"
+                                            }`}>
                                             {tab}
                                         </button>
                                     </li>
@@ -45,9 +52,8 @@ function Overview({ slug }) {
                                 className="absolute bottom-[-1px] left-0 h-[2px] bg-[#76B900] transition-all duration-300 ease-in-out"
                                 style={{
                                     width: `${activeTabWidth}px`,
-                                    transform: `translateX(${activeTabOffset}px)`
-                                }}
-                            ></span>
+                                    transform: `translateX(${activeTabOffset}px)`,
+                                }}></span>
                         </nav>
                     </div>
 
@@ -92,8 +98,7 @@ function Overview({ slug }) {
                                         <div className="w-full mt-[20px] justify-end">
                                             {slug?.Overview?.quickLink.map(
                                                 (link) => (
-                                                    <QuickLink link={link}  />
-
+                                                    <QuickLink link={link} />
                                                 )
                                             )}
                                         </div>
@@ -144,8 +149,7 @@ function Overview({ slug }) {
                                         <div className="w-full mt-[20px] justify-end">
                                             {slug?.Technical?.quickLink?.map(
                                                 (link) => (
-                                                    <QuickLink link={link}  />
-                                                    
+                                                    <QuickLink link={link} />
                                                 )
                                             )}
                                         </div>
@@ -171,9 +175,13 @@ function Overview({ slug }) {
                                                     {item?.title}
                                                 </h3>
                                                 <span
-                                                    className={`${activeFaq == index ? "transform rotate-180" : ""
-                                                        } text-[30px] max-[980px]:text-[20px] transition-transform duration-300 ease-in-out`}
-                                                >                                                    <IoIosArrowDown />
+                                                    className={`${
+                                                        activeFaq == index
+                                                            ? "transform rotate-180"
+                                                            : ""
+                                                    } text-[30px] max-[980px]:text-[20px] transition-transform duration-300 ease-in-out`}>
+                                                    {" "}
+                                                    <IoIosArrowDown />
                                                 </span>
                                             </button>
                                             {activeFaq == index && (
@@ -219,7 +227,6 @@ function Overview({ slug }) {
                                             {slug?.faq?.quickLink.map(
                                                 (link) => (
                                                     <QuickLink link={link} />
-                                                    
                                                 )
                                             )}
                                         </div>
