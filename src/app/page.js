@@ -11,6 +11,7 @@ import Documentation from "../components/Documentation";
 import Models from "../components/Models";
 import Navbar3 from "../components/includes/navbar/Navbar3";
 
+
 function Home() {
     const sectionRefs = {
         spotlight: useRef(null),
