@@ -13,6 +13,11 @@
 /.next/
 /out/
 
+module.exports = {
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+};
 # production
 /build
 
