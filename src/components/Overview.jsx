@@ -67,8 +67,8 @@ function Overview({ slug }) {
                                         </h3>
 
                                         {slug?.Overview?.content.map(
-                                            (paragraph) => (
-                                                <div className="mt-5">
+                                            (paragraph,index) => (
+                                                <div key={index} className="mt-5">
                                                     <p className=" text-[#1A1A1A] max-[1280px]:text-[15px]">
                                                         {paragraph}
                                                     </p>
@@ -97,8 +97,8 @@ function Overview({ slug }) {
                                         </p>
                                         <div className="w-full mt-[20px] justify-end">
                                             {slug?.Overview?.quickLink.map(
-                                                (link) => (
-                                                    <QuickLink link={link} />
+                                                (link,index) => (
+                                                    <QuickLink link={link} key={index} />
                                                 )
                                             )}
                                         </div>
@@ -115,8 +115,8 @@ function Overview({ slug }) {
                                         </h3>
 
                                         {slug?.Technical?.content.map(
-                                            (paragraph) => (
-                                                <div className="mt-5">
+                                            (paragraph,index) => (
+                                                <div key={index} className="mt-5">
                                                     <p className=" text-[#1A1A1A] max-[1280px]:text-[15px]">
                                                         {paragraph}
                                                     </p>
@@ -148,8 +148,8 @@ function Overview({ slug }) {
                                         </p>
                                         <div className="w-full mt-[20px] justify-end">
                                             {slug?.Technical?.quickLink?.map(
-                                                (link) => (
-                                                    <QuickLink link={link} />
+                                                (link,index) => (
+                                                    <QuickLink link={link} key={index} />
                                                 )
                                             )}
                                         </div>
@@ -193,8 +193,8 @@ function Overview({ slug }) {
                                                     </div>
 
                                                     {item?.points?.map(
-                                                        (point) => (
-                                                            <div>
+                                                        (point,index) => (
+                                                            <div key={index}>
                                                                 <div className="flex my-5">
                                                                     <p>
                                                                         <b>
@@ -225,8 +225,8 @@ function Overview({ slug }) {
                                         </p>
                                         <div className="w-full mt-[20px] justify-end">
                                             {slug?.faq?.quickLink.map(
-                                                (link) => (
-                                                    <QuickLink link={link} />
+                                                (link,index) => (
+                                                    <QuickLink link={link} key={index} />
                                                 )
                                             )}
                                         </div>

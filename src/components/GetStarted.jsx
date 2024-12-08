@@ -40,8 +40,8 @@ function GetStarted() {
                             </h3>
                             <p>{item.subTitle}</p>
                             <ul className="mt-[15px] ">
-                                {item.content.map((item) => (
-                                    <li className="mt-[10px] flex items-center gap-2">
+                                {item.content.map((item,index) => (
+                                    <li key={index} className="mt-[10px] flex items-center gap-2">
                                         <FaCheck className="text-[#768900]" />
                                         {item}
                                     </li>
