@@ -90,16 +90,20 @@ function Run() {
                         </nav>
                         <div className=" w-full py-[50px] px-[30px] bg-[#101010] border-[2px] border-[#202020] rounded-[10px]">
                             <span className="text-[#c3c3c3]">
-                                curl -X 'POST'/
+                                curl -X &apos;POST&apos;/
                                 <br />
-                                'http://0.0.0.0:8000/v1/completions' \ <br />
-                                -H 'accept: application/json' \ <br />
-                                -H 'Content-Type: application/json' \<br />
-                                -d '<br />
+                                &apos;http://0.0.0.0:8000/v1/completions&apos; \
+                                <br />
+                                -H &apos;accept: application/json&apos; \<br />
+                                -H &apos;Content-Type: application/json&apos; \
+                                <br />
+                                -d &apos;
+                                <br />
                                 <span className="text-[#76B900]">
                                     "model" : "model_name", <br />
                                     "prompt" : "Once upon a time",
-                                    <br /> "max_tokens" : 64
+                                    <br />
+                                    "max_tokens" : 64
                                 </span>
                             </span>
                         </div>
