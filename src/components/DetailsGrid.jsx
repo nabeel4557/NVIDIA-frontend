@@ -10,8 +10,8 @@ function DetailsGrid({ slug }) {
                             <h5 className="text-[20px] font-bold max-[1280px]:text-[18px] max-[768px]:text-[16px] max-[980px]:mt-[15px] mb-[10px]">
                                 {item.title}
                             </h5>
-                            {item.list.map((item) => (
-                                <p className="max-[1280px]:text-[15px] ">
+                            {item.list.map((item,index) => (
+                                <p key={index} className="max-[1280px]:text-[15px] ">
                                     {item}
                                 </p>
                             ))}

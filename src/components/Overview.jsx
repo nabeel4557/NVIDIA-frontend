@@ -78,8 +78,8 @@ function Overview({ slug }) {
 
                                         <div>
                                             {slug?.Overview?.points?.map(
-                                                (points) => (
-                                                    <div className="flex gap-2 my-2">
+                                                (points,index) => (
+                                                    <div key={index} className="flex gap-2 my-2">
                                                         <b className="">
                                                             {">"}
                                                         </b>
@@ -127,7 +127,7 @@ function Overview({ slug }) {
                                         <div>
                                             {slug?.Technical?.contentPoints?.map(
                                                 (point, index) => (
-                                                    <div className="flex my-5">
+                                                    <div key={index} className="flex my-5">
                                                         <h3 className="mr-1 font-medium">
                                                             {index + 1}.
                                                         </h3>
@@ -161,7 +161,7 @@ function Overview({ slug }) {
                             <div className="flex  w-full gap-[100px]  max-[640px]:block">
                                 <div className="w-[60%] py-6  max-[640px]:w-full">
                                     {slug?.faq?.main.map((item, index) => (
-                                        <div className="">
+                                        <div key={index} className="">
                                             <button
                                                 onClick={() => {
                                                     if (activeFaq != index) {

@@ -33,8 +33,8 @@ function GetStarted() {
                     Get Started
                 </h2>
                 <div className="w-full flex  gap-6 mt-[40px] max-[768px]:block">
-                    {cardItem.map((item) => (
-                        <div className="w-1/2 py-[30px] px-[28px] bg-[#000] max-[768px]:w-full max-[640px]:w-full">
+                    {cardItem.map((item,index) => (
+                        <div key={index} className="w-1/2 py-[30px] px-[28px] bg-[#000] max-[768px]:w-full max-[640px]:w-full">
                             <h3 className="text-[28px] font-bold mb-[30px] max-[1280px]:text-[24px] max-[1080px]:text-[20px]">
                                 {item.title}
                             </h3>
