@@ -1,94 +1,4 @@
-// import Link from "next/link";
-// import React, { useState } from "react";
-// import { IoIosArrowDown } from "react-icons/io";
 
-// function Navbar3() {
-//     const navbarTitles = [
-//         { titles: "Models", id: "#models" },
-//         { titles: "Integrations", id: "#integrations" },
-//         { titles: "Run Anywhere", id: "#run" },
-//         { titles: "Get Started", id: "#get-started" },
-//         { titles: "Use Cases", id: "#case" },
-//         { titles: "Ecosystem", id: "#ecosystem" },
-//         { titles: "Resources", id: "#resources" },
-//         { titles: "Docs", id: "#documentation" },
-//     ];
-
-//     const [toggle, setToggle] = useState(false);
-//     const [activeLink, setActiveLink] = useState("");
-
-//     const toggledropdown = () => {
-//         setToggle(!toggle);
-//     };
-
-//     const handleClick = (link) => {
-//         setActiveLink(link);
-//     };
-
-//     return (
-//         <div className="bg-[#1A1A1A] sticky top-[90px] py-2 max-[360px]:w-full">
-//             {toggle && (
-//                 <div className="hidden max-[540px]:block max-[640px]:w-full bg-[#333333] absolute top-[60px] leading-9 z-50">
-//                     <ul className="wrapper">
-//                         {navbarTitles.map((item, index) => (
-//                             <li key={index} className="py-2 px-4 text-white">
-//                                 <Link
-//                                     href={item.id}
-//                                     scroll={true}
-//                                     onClick={() => {
-//                                         handleClick(item.id);
-//                                         toggledropdown();
-//                                     }}>
-//                                     {item.titles}
-//                                 </Link>
-//                             </li>
-//                         ))}
-//                     </ul>
-//                 </div>
-//             )}
-
-//             <div className="wrapper flex items-center justify-between w-full h-[60px]">
-
-//                 <div className="hidden max-[640px]:block relative">
-//                     <div
-//                         className="flex items-center gap-3"
-//                         onClick={toggledropdown}>
-//                         <span className="text-[#fff]">Models</span>
-//                         <IoIosArrowDown />
-//                     </div>
-//                 </div>
-
-//                 <div className="flex items-center">
-//                     <ul className="text-[#EEEEEE] flex items-center gap-5 text-[15px]">
-//                         {navbarTitles.map((item, index) => (
-//                             <li key={index} className="max-[640px]:hidden">
-//                                 <Link
-//                                     href={item.id}
-//                                     scroll={true}
-//                                     className={`${
-//                                         activeLink === item.id
-//                                             ? "border-b-2 border-[#76b900] pb-1"
-//                                             : ""
-//                                     }`}
-//                                     onClick={() => handleClick(item.id)}>
-//                                     {item.titles}
-//                                 </Link>
-//                             </li>
-//                         ))}
-//                     </ul>
-//                 </div>
-
-//                 <div>
-//                     <button className="text-black bg-[#76b900] text-[18px] py-[13px] px-[15px] border-none font-bold">
-//                         Try Now
-//                     </button>
-//                 </div>
-//             </div>
-//         </div>
-//     );
-// }
-
-// export default Navbar3;
 
 import React, { useEffect, useRef, useState } from "react";
 import Link from "next/link";
@@ -230,9 +140,8 @@ function Navbar3({ currentSection }) {
                         ? "navbar top-[110px]"
                         : "navbar top-[74px]"
                 }`}>
-                
-                <div className='wrapper'>
-                    <div className=" flex items-center justify-between w-full h-[60px]  max-[640px]:h-auto max-[1280px]:w-full  max-[980px]:w-[700px] max-[786px]:w-[600px] max-[640px]:w-[500px] max-[540px]:w-[480px] max-[480px]:w-full  max-[480px]:px-[10px]">
+                <div className="wrapper">
+                    <div className=" flex items-center justify-between w-full h-[60px]  max-[640px]:h-auto max-[1280px]:w-full  max-[980px]:w-[700px] max-[786px]:w-[600px] max-[640px]:w-[500px] max-[540px]:w-[480px] max-[480px]:w-full  max-[480px]:px-[10px] max-[980px]:relative">
                         <ul className="text-[#EEEEEE] flex items-center gap-5 text-[15px] relative">
                             <div
                                 className="absolute -bottom-[15px] left-0 h-[2px] bg-[#76b900] transition-all duration-300 ease-in-out"
@@ -246,7 +155,7 @@ function Navbar3({ currentSection }) {
                                     id={item.navid}
                                     key={index}
                                     ref={(el) => (itemRefs.current[index] = el)}
-                                    className="flex  max-[640px]:hidden relative">
+                                    className="flex  max-[980px]:hidden relative">
                                     <Link
                                         href={item.id}
                                         scroll={true}
@@ -257,8 +166,8 @@ function Navbar3({ currentSection }) {
                                 </li>
                             ))}
                         </ul>
-                        <div className='flex justify-end'>
-                            <button className="text-black bg-[#76b900] text-[18px] py-[13px] px-[15px] border-none font-bold  max-[1280px]:py-[11px] max-[1280px]:px-[13px] max-[1280px]:text-[15px]  max-[640px]:py-[9px] max-[640px]:px-[10px]">
+                        <div className="flex justify-end max-[980px]:absolute max-[980px]: right-0 max-[980px]:w-full">
+                            <button className="text-black bg-[#76b900] text-[18px] py-[13px] px-[15px] border-none font-bold  max-[1280px]:py-[11px] max-[1280px]:px-[13px] max-[1280px]:text-[15px]  max-[640px]:py-[9px] max-[640px]:px-[10px]  ">
                                 Try Now
                             </button>
                         </div>

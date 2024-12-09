@@ -88,7 +88,7 @@ function Run() {
                                 </li>
                             </ul>
                         </nav>
-                        <div className=" w-full py-[50px] px-[30px] bg-[#101010] border-[2px] border-[#202020] rounded-[10px]">
+                        <div className="w-full py-[50px] px-[30px] bg-[#101010] border-[2px] border-[#202020] rounded-[10px]">
                             <span className="text-[#c3c3c3]">
                                 curl -X &apos;POST&apos;/
                                 <br />
@@ -100,10 +100,12 @@ function Run() {
                                 -d &apos;
                                 <br />
                                 <span className="text-[#76B900]">
-                                    "model" : "model_name", <br />
-                                    "prompt" : "Once upon a time",
+                                    &quot;model&quot; : &quot;model_name&quot;,{" "}
                                     <br />
-                                    "max_tokens" : 64
+                                    &quot;prompt&quot; : &quot;Once upon a
+                                    time&quot;,
+                                    <br />
+                                    &quot;max_tokens&quot; : 64
                                 </span>
                             </span>
                         </div>
