@@ -187,6 +187,7 @@ function Navbar3({ currentSection }) {
                                 </span>
                             </button>
                         </div>
+                        
                         <div className="flex justify-end items-center">
                             <button className=" flex text-black bg-[#76b900] text-[18px] py-[13px] px-[15px] border-none font-bold  max-[1280px]:py-[11px] max-[1280px]:px-[13px] max-[1280px]:text-[15px]  max-[640px]:py-[9px] max-[640px]:px-[10px]  ">
                                 Try Now
