@@ -141,7 +141,7 @@ function Navbar3({ currentSection }) {
                         : "navbar top-[74px] max-[1080px]:top-[62px]"
                 }`}>
                 <div className="wrapper">
-                    <div className="box-border flex items-center justify-between w-full h-[60px] max-[1080px]:h-[48px] max-[640px]:h-auto max-[1280px]:w-full  max-[980px]:w-[700px] max-[786px]:w-[600px] max-[640px]:w-[500px] max-[540px]:w-[480px] max-[480px]:w-full  max-[480px]:px-[10px] max-[980px]:relative">
+                    <div className="box-border flex items-center justify-between w-full ">
                         <ul className="text-[#EEEEEE] flex items-center gap-5 text-[15px] relative max-[1080px]:hidden">
                             <div
                                 className="absolute -bottom-[15px] left-0 h-[2px] bg-[#76b900] transition-all duration-300 ease-in-out"
