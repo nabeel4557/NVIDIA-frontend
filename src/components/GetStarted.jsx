@@ -45,12 +45,16 @@ function GetStarted() {
                                 {item.content.map((item, index) => (
                                     <li
                                         key={index}
-                                        className="mt-[10px] flex items-center gap-2">
-                                        <span>
-                                            <FaCheck className="text-[#768900]" />
-                                        </span>
+                                        className=" flex items-center gap-2">
+                                        <div className="flex justify-center items-center w-[20px] h-[20px]">
+                                            <FaCheck
+                                                width={100}
+                                                height={100}
+                                                className="text-[#768900]"
+                                            />
+                                        </div>
 
-                                        {item}
+                                        <p>{item}</p>
                                     </li>
                                 ))}
                             </ul>

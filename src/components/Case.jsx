@@ -38,7 +38,7 @@ function Case() {
                                     {item?.description}
                                 </p>
 
-                                <LinkArrow index={index} />
+                                <LinkArrow  index={index} />
                             </div>
                         </div>
                     ))}
