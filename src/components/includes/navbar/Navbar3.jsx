@@ -147,7 +147,7 @@ function Navbar3({ currentSection }) {
                                 className="absolute -bottom-[15px] left-0 h-[2px] bg-[#76b900] transition-all duration-300 ease-in-out"
                                 style={{
                                     width: activeItemWidth,
-                                    transform: translateX(${activeItemLeft}px),
+                                    transform: `translateX(${activeItemLeft}px)`,
                                 }}
                             />
                             {navbarTitles.map((item, index) => (
@@ -167,19 +167,25 @@ function Navbar3({ currentSection }) {
                             ))}
                         </ul>
                         <div className="hidden max-[1080px]:block  ">
-                            <button onClick={()=>setDropActive(!isDropActive)} className="flex gap-1  ">
-                                <h3 className="">{navbarTitles?.[activeItem].title}</h3>
-                                <span className={transform transition-all duration-300 ease-in-out ${isDropActive ? 'rotate-[270deg]' : 'rotate-[90deg]' }}>
-                        <MdKeyboardArrowRight
-                            size={24}
-                            color={'white'}
-                            className= {`justify-start items-end inline-flex   `}
-                        />
-                    </span>
+                            <button
+                                onClick={() => setDropActive(!isDropActive)}
+                                className="flex gap-1  ">
+                                <h3 className="">
+                                    {navbarTitles?.[activeItem].title}
+                                </h3>
+                                <span
+                                    className={`transform transition-all duration-300 ease-in-out ${
+                                        isDropActive
+                                            ? "rotate-[270deg]"
+                                            : "rotate-[90deg]"
+                                    }`}>
+                                    <MdKeyboardArrowRight
+                                        size={24}
+                                        color={"white"}
+                                        className={`justify-start items-end inline-flex   `}
+                                    />
+                                </span>
                             </button>
-                            
-
-                        
                         </div>
                         <div className="flex justify-end items-center">
                             <button className=" flex text-black bg-[#76b900] text-[18px] py-[13px] px-[15px] border-none font-bold  max-[1280px]:py-[11px] max-[1280px]:px-[13px] max-[1280px]:text-[15px]  max-[640px]:py-[9px] max-[640px]:px-[10px]  ">
@@ -187,30 +193,38 @@ function Navbar3({ currentSection }) {
                             </button>
                         </div>
                     </div>
-
-                   
                 </div>
                 <div className="">
-                    {<ul className=" width-full bg-[#333] px-7 mt-2  ">
-                            {isDropActive && navbarTitles.map((item, index) => (
-                                <li
-                                    id={item.navid}
-                                    key={index}
-                                    ref={(el) => (itemRefs.current[index] = el)}
-                                    className="flex   relative">
-                                    <Link
-                                        href={item.id}
-                                        scroll={true}
-                                        className={`${index == activeItem && 'text-[#76b900]'} p-2 transition-all duration-300 ease-in-out `}
-                                        onClick={() => {setActiveItem(index);setDropActive(false)}}>
-                                        {item.title}
-                                    </Link>
-                                </li>
-                            ))}
-                            </ul>}
-                    </div>
+                    {
+                        <ul className=" width-full bg-[#333] px-7 mt-2  ">
+                            {isDropActive &&
+                                navbarTitles.map((item, index) => (
+                                    <li
+                                        id={item.navid}
+                                        key={index}
+                                        ref={(el) =>
+                                            (itemRefs.current[index] = el)
+                                        }
+                                        className="flex   relative">
+                                        <Link
+                                            href={item.id}
+                                            scroll={true}
+                                            className={`${
+                                                index == activeItem &&
+                                                "text-[#76b900]"
+                                            } p-2 transition-all duration-300 ease-in-out `}
+                                            onClick={() => {
+                                                setActiveItem(index);
+                                                setDropActive(false);
+                                            }}>
+                                            {item.title}
+                                        </Link>
+                                    </li>
+                                ))}
+                        </ul>
+                    }
+                </div>
             </div>
-
         </div>
     );
 }
