@@ -33,16 +33,23 @@ function GetStarted() {
                     Get Started
                 </h2>
                 <div className="w-full flex  gap-6 mt-[40px] max-[768px]:block">
-                    {cardItem.map((item,index) => (
-                        <div key={index} className="w-1/2 py-[30px] px-[28px] bg-[#000] max-[768px]:w-full max-[640px]:w-full">
+                    {cardItem.map((item, index) => (
+                        <div
+                            key={index}
+                            className="w-1/2 py-[30px] px-[28px] bg-[#000] max-[768px]:w-full max-[640px]:w-full">
                             <h3 className="text-[28px] font-bold mb-[30px] max-[1280px]:text-[24px] max-[1080px]:text-[20px]">
                                 {item.title}
                             </h3>
                             <p>{item.subTitle}</p>
                             <ul className="mt-[15px] ">
-                                {item.content.map((item,index) => (
-                                    <li key={index} className="mt-[10px] flex items-center gap-2">
-                                        <FaCheck className="text-[#768900]" />
+                                {item.content.map((item, index) => (
+                                    <li
+                                        key={index}
+                                        className="mt-[10px] flex items-center gap-2">
+                                        <span>
+                                            <FaCheck className="text-[#768900]" />
+                                        </span>
+
                                         {item}
                                     </li>
                                 ))}
@@ -70,9 +77,10 @@ function GetStarted() {
                                 build, fine-tune, and deploy custom models for
                                 your enterprise applications.
                             </p>
-                            
 
-                            <Link href={'#'} className="text-[18px] font-bold mt-[25px]  flex items-center max-[1280px]:text-[16px] max-[1080px]:text-[14px]">
+                            <Link
+                                href={"#"}
+                                className="text-[18px] font-bold mt-[25px]  flex items-center max-[1280px]:text-[16px] max-[1080px]:text-[14px]">
                                 Get Started{" "}
                                 <MdKeyboardArrowRight
                                     className="max-[1280px]:size-[24px]"
