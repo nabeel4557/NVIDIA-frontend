@@ -121,7 +121,7 @@ function Navbar3({ currentSection }) {
 
     useEffect(() => {
         const index = navbarTitles.findIndex(
-            (item) => item.id === #${currentSection}
+            (item) => item.id === `#${currentSection}`
         );
         if (index !== -1) {
             setActiveItem(index);
