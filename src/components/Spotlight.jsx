@@ -26,7 +26,7 @@ function Spotlight() {
                             deploy anywhere with NVIDIA NIM™ inference
                             microservices.
                         </p>
-                        <div className="flex gap-3 mt-3 max-[1080px]:w-[40%] max-[640px]:w-full">
+                        <div className="flex gap-3 mt-3 max-[1080px]:w-[40%] max-[960px]:w-full ">
                             <button className="text-black font-bold bg-[#76b900] text-[18px] py-[13px] px-[15px] border-none max-[1280px]:py-[11px] max-[1280px]:px-[13px] max-[1280px]:text-[15px] max-[1080px]:py-[9px] max-[1080px]:px-[12px] max-[1080px]:text-[14px]">
                                 Try Now
                             </button>
