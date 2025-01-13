@@ -327,5 +327,57 @@ export const dynamicData = [
     },
 
 ]
-
+ export   const footerItems = [
+        {
+            title: "Jetson",
+            data: [
+                "About Us",
+                "Company Overview",
+                "Investors",
+                "Venture Capital(NVentures)",
+                "NVIDIA Foundation",
+                "Research",
+                "Corporate Sustainability",
+                "Technologies",
+                " Careers",
+            ],
+        },
+        {
+            title: "Technologies",
+            data: [
+                "CUDA-X",
+                "NVIDIA Ampere Architecture",
+                "Tensor Cores",
+                "Multi-Instance GPU (MIG)",
+            ],
+        },
+        {
+            title: "Resources",
+            data: [
+                "AI Foundation Models",
+                "Case Studies",
+                "Content Library",
+                "Deep Learning Blogs",
+                "Developer Education",
+                "Documentation",
+                "Glossary",
+                "GTC AI Conference",
+                "Kaggle Grandmasters",
+                "Tensor Cores",
+                "Multi-Instance GPU (MIG)",
+            ],
+        },
+        {
+            title: "Company Info",
+            data: [
+                "CUDA-X",
+                "NVIDIA Ampere Architecture",
+                "Tensor Cores",
+                "Multi-Instance GPU (MIG)",
+                "NVIDIA Ampere Architecture",
+                "Tensor Cores",
+                "Multi-Instance GPU (MIG)",
+            ],
+        },
+    ];
 

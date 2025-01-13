@@ -2,7 +2,7 @@ import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { IoIosArrowDown } from "react-icons/io";
-import QuickLink from "../components/QuickLink";
+import QuickLink from "./QuickLink";
 
 function Overview({ slug }) {
     const [activeTab, setActiveTab] = useState("Overview");
@@ -67,8 +67,10 @@ function Overview({ slug }) {
                                         </h3>
 
                                         {slug?.Overview?.content.map(
-                                            (paragraph,index) => (
-                                                <div key={index} className="mt-5">
+                                            (paragraph, index) => (
+                                                <div
+                                                    key={index}
+                                                    className="mt-5">
                                                     <p className=" text-[#1A1A1A] max-[1280px]:text-[15px]">
                                                         {paragraph}
                                                     </p>
@@ -78,8 +80,10 @@ function Overview({ slug }) {
 
                                         <div>
                                             {slug?.Overview?.points?.map(
-                                                (points,index) => (
-                                                    <div key={index} className="flex gap-2 my-2">
+                                                (points, index) => (
+                                                    <div
+                                                        key={index}
+                                                        className="flex gap-2 my-2">
                                                         <b className="">
                                                             {">"}
                                                         </b>
@@ -97,8 +101,11 @@ function Overview({ slug }) {
                                         </p>
                                         <div className="w-full mt-[20px] justify-end">
                                             {slug?.Overview?.quickLink.map(
-                                                (link,index) => (
-                                                    <QuickLink link={link} key={index} />
+                                                (link, index) => (
+                                                    <QuickLink
+                                                        link={link}
+                                                        key={index}
+                                                    />
                                                 )
                                             )}
                                         </div>
@@ -115,8 +122,10 @@ function Overview({ slug }) {
                                         </h3>
 
                                         {slug?.Technical?.content.map(
-                                            (paragraph,index) => (
-                                                <div key={index} className="mt-5">
+                                            (paragraph, index) => (
+                                                <div
+                                                    key={index}
+                                                    className="mt-5">
                                                     <p className=" text-[#1A1A1A] max-[1280px]:text-[15px]">
                                                         {paragraph}
                                                     </p>
@@ -127,7 +136,9 @@ function Overview({ slug }) {
                                         <div>
                                             {slug?.Technical?.contentPoints?.map(
                                                 (point, index) => (
-                                                    <div key={index} className="flex my-5">
+                                                    <div
+                                                        key={index}
+                                                        className="flex my-5">
                                                         <h3 className="mr-1 font-medium">
                                                             {index + 1}.
                                                         </h3>
@@ -148,8 +159,11 @@ function Overview({ slug }) {
                                         </p>
                                         <div className="w-full mt-[20px] justify-end">
                                             {slug?.Technical?.quickLink?.map(
-                                                (link,index) => (
-                                                    <QuickLink link={link} key={index} />
+                                                (link, index) => (
+                                                    <QuickLink
+                                                        link={link}
+                                                        key={index}
+                                                    />
                                                 )
                                             )}
                                         </div>
@@ -193,7 +207,7 @@ function Overview({ slug }) {
                                                     </div>
 
                                                     {item?.points?.map(
-                                                        (point,index) => (
+                                                        (point, index) => (
                                                             <div key={index}>
                                                                 <div className="flex my-5">
                                                                     <p>
@@ -225,8 +239,11 @@ function Overview({ slug }) {
                                         </p>
                                         <div className="w-full mt-[20px] justify-end">
                                             {slug?.faq?.quickLink.map(
-                                                (link,index) => (
-                                                    <QuickLink link={link} key={index} />
+                                                (link, index) => (
+                                                    <QuickLink
+                                                        link={link}
+                                                        key={index}
+                                                    />
                                                 )
                                             )}
                                         </div>

@@ -3,7 +3,7 @@ import React from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { dynamicData } from "../utilities/StaticString";
 import Image from "next/image";
-import LinkArrow from "../components/LinkArrow";
+import LinkArrow from "../app/_components/LinkArrow";
 
 function Case() {
     return (
@@ -22,7 +22,9 @@ function Case() {
 
                 <div className="flex  items-center mt-[40px] gap-7 max-[1080px]:w-full max-[1080px]:mx-auto max-[980px]:flex-wrap max-[980px]:w-full max-[980px]:justify-center max-[786px]:w-full max-[640px]:w-[90%] max-[540px]:w-full">
                     {dynamicData.map((item, index) => (
-                        <div key={index} className="w-1/3 bg-[#fff] h-[530px] max-[980px]:h-[500px] max-[640px]:h-[550px] relative pb-[30px] shadow-lg max-[1080px]:w-[32%] max-[980px]:w-[35%] max-[786px]:w-[35%] max-[640px]:w-[500px] max-[540px]:w-full">
+                        <div
+                            key={index}
+                            className="w-1/3 bg-[#fff] h-[530px] max-[980px]:h-[500px] max-[640px]:h-[550px] relative pb-[30px] shadow-lg max-[1080px]:w-[32%] max-[980px]:w-[35%] max-[786px]:w-[35%] max-[640px]:w-[500px] max-[540px]:w-full">
                             <div className="w-full max-[640px]:w-[500px] max-[540px]:w-full ">
                                 <img
                                     className="max-[640px]:w-full max-[540px]:w-full"
@@ -38,7 +40,7 @@ function Case() {
                                     {item?.description}
                                 </p>
 
-                                <LinkArrow  index={index} />
+                                <LinkArrow index={index} />
                             </div>
                         </div>
                     ))}

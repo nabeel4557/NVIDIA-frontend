@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
-import LinkArrow from "../components/LinkArrow";
+import LinkArrow from "../app/_components/LinkArrow";
 
 function Resources() {
     const cardItems = [
@@ -44,8 +44,10 @@ function Resources() {
                     Unlock, Upskill, and Upscale
                 </h2>
                 <div className="w-full flex items-center gap-4 mt-[40px] max-[1280px]:w-[80%] max-[1280px]:mx-auto max-[1080px]:w-[80%] max-[1080px]:justify-center max-[1080px]:flex-wrap max-[786px]:w-full max-[640px]:w-full max-[640px]:block max-[540px]:w-full">
-                    {cardItems.map((item,index) => (
-                        <div key={index} className="w-1/4 bg-[#fff] h-[580px] relative pb-[30px] shadow-lg max-[1080px]:w-[37%]  max-[980px]:w-[45%] max-[786px]:w-[39%] max-[640px]:w-[89%] max-[640px]:mx-auto max-[540px]:w-full">
+                    {cardItems.map((item, index) => (
+                        <div
+                            key={index}
+                            className="w-1/4 bg-[#fff] h-[580px] relative pb-[30px] shadow-lg max-[1080px]:w-[37%]  max-[980px]:w-[45%] max-[786px]:w-[39%] max-[640px]:w-[89%] max-[640px]:mx-auto max-[540px]:w-full">
                             <div className="">
                                 <img
                                     className="max-[640px]:w-full"

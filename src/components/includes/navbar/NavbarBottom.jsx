@@ -144,7 +144,8 @@ function NavbarBottom() {
                         </div>
                     </div>
                 )}
-                <div className="flex items-center">
+                {}
+                {!pathname.includes('/use-cases') && <div className="flex items-center">
                     <ul className="flex items-center text-[16px] gap-[25px] mt-2 text-[#999999] max-[1080px]:hidden">
                         <li>
                             <Link
@@ -202,7 +203,7 @@ function NavbarBottom() {
                             </li>
                         ))}
                     </ul>
-                </div>
+                </div>}
             </div>
         </div>
     );
