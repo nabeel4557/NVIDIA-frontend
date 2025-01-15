@@ -1,6 +1,6 @@
 import localFont from "next/font/local";
 import "../style/globals.css";
-import Footer from "../components/includes/page";
+import Footer from "../components/includes/footer/page";
 import Navbar from "../components/includes/navbar/page";
 import { footerItems } from "../utilities/StaticString";
 

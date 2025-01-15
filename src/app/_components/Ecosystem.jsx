@@ -3,7 +3,7 @@ import React from "react";
 function Ecosystem() {
     const ImageLoop = [1, 2, 3, 4, 5, 6, 7, 8, 9];
     return (
-        <div className="w-full bg-[#fff] py-[75px] max-[540px]:w-full ">
+        <div className="w-full bg-[#fff] py-[75px] max-[640px]:py-[40px] max-[540px]:w-full ">
             <div className="w-full max-[1280px]:w-[980px] max-[1280px]:mx-auto max-[1080px]:w-[700px] max-[1080px]:mx-auto max-[786px]:w-[600px] max-[640px]:w-[500px] max-[540px]:w-full">
                 <h6 className="text-[20px] font-bold text-[#1A1A1A] text-center max-[1280px]:text-[18px]">
                     Ecosystem
@@ -22,7 +22,7 @@ function Ecosystem() {
                     {[...ImageLoop, ...ImageLoop].map((item, index) => (
                         <div
                             key={index}
-                            className="w-[100%] h-[120px] flex-shrink-0 ">
+                            className="w-[100%] h-[120px] max-[640px]:h-[70px] flex-shrink-0 ">
                             <img
                                 className="w-full h-full object-cover"
                                 src="images/img10.png"
@@ -35,7 +35,7 @@ function Ecosystem() {
                     {[...ImageLoop, ...ImageLoop].map((item, index) => (
                         <div
                             key={index}
-                            className="w-[full] h-[120px] flex-shrink-0 ">
+                            className="w-[full] h-[120px] max-[640px]:h-[70px] flex-shrink-0 ">
                             <img
                                 className="w-full h-full object-cover"
                                 src="images/img11.png"

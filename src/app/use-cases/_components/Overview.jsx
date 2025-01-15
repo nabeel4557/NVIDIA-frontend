@@ -23,7 +23,7 @@ function Overview({ slug }) {
     }, [activeTab, slug]);
 
     return (
-        <div className="w-full bg-[#fff] text-[#000] py-[75px] max-[640px]:py-[10px]  max-[540px]:h-auto">
+        <div className="w-full bg-[#fff] text-[#000] py-[75px]  max-[640px]:py-[10px]  max-[540px]:h-auto">
             <div className="wrapper">
                 <div className="w-full  py-[30px] justify-between max-[1280px]:w-[88%] max-[1280px]:mx-auto max-[1080px]:w-full max-[980px]:w-[75%] max-[768px]:w-[95%]  max-[540px]:">
                     <div className="left w-[55%] max-[980px]:w-auto max-[540px]:w-[100%]">
@@ -59,8 +59,8 @@ function Overview({ slug }) {
 
                     <div>
                         {activeTab == "Overview" && (
-                            <div className="flex  w-full gap-[100px] max-[640px]:block">
-                                <div className="w-[60%] py-6 max-[640px]:w-[100%]">
+                            <div className="flex  w-full gap-[100px] max-[980px]:block max-[640px]:block">
+                                <div className="w-[60%] py-6 max-[980px]:w-[100%] max-[640px]:w-[100%]">
                                     <>
                                         <h3 className="text-[36px] font-bold leading-10 max-[1280px]:text-[28px] max-[980px]:text-[24px] max-[768px]:leading-7">
                                             {slug?.Overview?.title}
@@ -94,8 +94,8 @@ function Overview({ slug }) {
                                         </div>
                                     </>
                                 </div>
-                                <div className=" w-[38%] relative max-[1080px]:w-[35%] max-[980px]:w-[40%] max-[640px]:w-[100%] ">
-                                    <div className=" right w-full  absolute top-[35px] max-[640px]:relative max-[640px]:top-0  max-[640px]:w-[100%] ">
+                                <div className=" w-[38%] relative max-[1280px]:w-[40%] max-[1080px]:w-[35%] max-[980px]:w-[100%] max-[640px]:w-[100%] ">
+                                    <div className=" right w-full  absolute max-[980px]:relative top-[35px] max-[640px]:relative max-[640px]:top-0  max-[640px]:w-[100%] ">
                                         <p className="text-[#1A1A1A] text-[15px]">
                                             Quick Links
                                         </p>
@@ -114,8 +114,8 @@ function Overview({ slug }) {
                             </div>
                         )}
                         {activeTab == "Technical Implementation" && (
-                            <div className="flex  w-full gap-[100px]  max-[640px]:block">
-                                <div className="w-[60%] py-6 max-[640px]:w-[100%]">
+                            <div className="flex  w-full gap-[100px] max-[980px]:block  max-[640px]:block">
+                                <div className="w-[60%] py-6 max-[980px]:w-[100%] max-[640px]:w-[100%]">
                                     <>
                                         <h3 className="text-[36px] font-bold leading-10 max-[1280px]:text-[28px] max-[980px]:text-[24px]">
                                             {slug?.Technical?.title}
@@ -152,8 +152,8 @@ function Overview({ slug }) {
                                         </div>
                                     </>
                                 </div>
-                                <div className=" w-[38%]  relative  max-[1080px]:w-[35%] max-[980px]:w-[40%]  max-[640px]:w-full">
-                                    <div className=" right w-full  absolute top-[35px] max-[640px]:relative max-[640px]:top-0  max-[540px]:w-[100%]">
+                                <div className=" w-[38%]  relative  max-[1080px]:w-[35%] max-[980px]:w-[100%]  max-[640px]:w-full">
+                                    <div className=" right w-full  absolute top-[35px] max-[980px]:relative max-[640px]:relative max-[640px]:top-0  max-[540px]:w-[100%]">
                                         <p className="text-[#1A1A1A] text-[15px] ">
                                             Quick Links
                                         </p>
@@ -172,8 +172,8 @@ function Overview({ slug }) {
                             </div>
                         )}
                         {activeTab == "FAQ" && (
-                            <div className="flex  w-full gap-[100px]  max-[640px]:block">
-                                <div className="w-[60%] py-6  max-[640px]:w-full">
+                            <div className="flex  w-full gap-[100px] max-[980px]:block  max-[640px]:block">
+                                <div className="w-[60%] py-6  max-[980px]:w-full">
                                     {slug?.faq?.main.map((item, index) => (
                                         <div key={index} className="">
                                             <button
@@ -232,8 +232,8 @@ function Overview({ slug }) {
                                         </div>
                                     ))}
                                 </div>
-                                <div className=" w-[38%]  relative  max-[1080px]:w-[35%] max-[980px]:w-[40%]  max-[640px]:w-full">
-                                    <div className=" right w-full  absolute top-[35px] max-[640px]:relative max-[640px]:top-0 max-[640px]:w-full">
+                                <div className=" w-[38%]  relative  max-[1080px]:w-[35%]   max-[980px]:w-full">
+                                    <div className=" right w-full  absolute top-[35px] max-[980px]:relative max-[640px]:relative max-[640px]:top-0 max-[980px]:w-full max-[640px]:w-full">
                                         <p className="text-[#1A1A1A] text-[15px] ">
                                             Quick Links
                                         </p>
