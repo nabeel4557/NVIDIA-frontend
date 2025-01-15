@@ -1,9 +1,9 @@
 "use client";
 import React, { useState } from "react";
 import { useParams } from "next/navigation";
-import DetailsGrid from "../../_components/DetailsGrid";
-import Overview from "../../_components/Overview";
-import Action from "../../_components/Action";
+import DetailsGrid from "../_components/DetailsGrid";
+import Overview from "../_components/Overview";
+import Action from "../_components/Action";
 import { Helmet } from "react-helmet";
 import { dynamicData } from "../../../utilities/StaticString";
 

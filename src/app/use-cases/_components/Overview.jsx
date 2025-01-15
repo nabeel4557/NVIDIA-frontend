@@ -2,7 +2,7 @@ import Link from "next/link";
 import React, { useEffect, useRef, useState } from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import { IoIosArrowDown } from "react-icons/io";
-import QuickLink from "./QuickLink";
+import QuickLink from "../../../components/QuickLink";
 
 function Overview({ slug }) {
     const [activeTab, setActiveTab] = useState("Overview");

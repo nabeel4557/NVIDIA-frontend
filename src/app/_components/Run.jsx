@@ -38,7 +38,7 @@ function Run() {
                     </h6>
                 </div>
 
-                <div className="py-[75px] gap-5  border-b-[2px] border-b-[#202020] w-full flex max-[1280px]:w-[80%] max-[1280px]:mx-auto max-[1080px]:w-[90%] max-[1080px]:mx-auto max-[786px]:w-[90%] max-[640px]:w-[90%] max-[640px]:block max-[540px]:w-full">
+                <div className="py-[75px] gap-5  border-b-[2px] border-b-[#202020] w-full flex max-[1280px]:w-[90%] max-[1280px]:mx-auto max-[1080px]:w-[90%] max-[1080px]:mx-auto max-[786px]:w-[90%] max-[640px]:w-[90%] max-[640px]:block max-[540px]:w-full">
                     <div className="left w-1/2  max-[640px]:w-full max-[540px]:w-full ">
                         <div className="">
                             <h3 className="text-[28px] font-bold max-[1280px]:text-[24px] max-[1080px]:text-[20px]">

@@ -1,7 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import { MdKeyboardArrowRight } from "react-icons/md";
-import LinkArrow from "../app/_components/LinkArrow";
+import LinkArrow from "../../components/LinkArrow";
 
 function Resources() {
     const cardItems = [
