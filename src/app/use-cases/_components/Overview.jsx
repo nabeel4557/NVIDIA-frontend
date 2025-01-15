@@ -59,8 +59,8 @@ function Overview({ slug }) {
 
                     <div>
                         {activeTab == "Overview" && (
-                            <div className="flex  w-full gap-[100px] max-[980px]:block max-[640px]:block">
-                                <div className="w-[60%] py-6 max-[980px]:w-[100%] max-[640px]:w-[100%]">
+                            <div className="flex  w-full gap-[100px] max-[1280px]:block max-[640px]:block">
+                                <div className="w-[60%] py-6 max-[1280px]:w-[100%] max-[640px]:w-[100%]">
                                     <>
                                         <h3 className="text-[36px] font-bold leading-10 max-[1280px]:text-[28px] max-[980px]:text-[24px] max-[768px]:leading-7">
                                             {slug?.Overview?.title}
@@ -94,11 +94,11 @@ function Overview({ slug }) {
                                         </div>
                                     </>
                                 </div>
-                                <div className=" w-[38%] relative max-[1280px]:w-[40%] max-[1080px]:w-[35%] max-[980px]:w-[100%] max-[640px]:w-[100%] ">
-                                    <div className=" right w-full  absolute max-[980px]:relative top-[35px] max-[640px]:relative max-[640px]:top-0  max-[640px]:w-[100%] ">
-                                        <p className="text-[#1A1A1A] text-[15px]">
+                                <div className=" w-[38%] relative max-[1280px]:w-[100%] max-[1080px]:w-[35%] max-[980px]:w-[100%] max-[640px]:w-[100%] ">
+                                    <div className=" right w-full  absolute max-[1280px]:relative top-[35px] max-[640px]:relative max-[640px]:top-0  max-[640px]:w-[100%] ">
+                                       {slug?.Overview?.quickLink &&  <p className="text-[#1A1A1A] text-[15px]">
                                             Quick Links
-                                        </p>
+                                        </p>}
                                         <div className="w-full mt-[20px] justify-end">
                                             {slug?.Overview?.quickLink.map(
                                                 (link, index) => (
@@ -115,7 +115,7 @@ function Overview({ slug }) {
                         )}
                         {activeTab == "Technical Implementation" && (
                             <div className="flex  w-full gap-[100px] max-[980px]:block  max-[640px]:block">
-                                <div className="w-[60%] py-6 max-[980px]:w-[100%] max-[640px]:w-[100%]">
+                                <div className="w-[60%] py-6 max-[1280px]:w-[100%] max-[640px]:w-[100%]">
                                     <>
                                         <h3 className="text-[36px] font-bold leading-10 max-[1280px]:text-[28px] max-[980px]:text-[24px]">
                                             {slug?.Technical?.title}
@@ -152,11 +152,11 @@ function Overview({ slug }) {
                                         </div>
                                     </>
                                 </div>
-                                <div className=" w-[38%]  relative  max-[1080px]:w-[35%] max-[980px]:w-[100%]  max-[640px]:w-full">
+                                <div className=" w-[38%]  relative  max-[1080px]:w-[35%] max-[1280px]:w-[100%]  max-[640px]:w-full">
                                     <div className=" right w-full  absolute top-[35px] max-[980px]:relative max-[640px]:relative max-[640px]:top-0  max-[540px]:w-[100%]">
-                                        <p className="text-[#1A1A1A] text-[15px] ">
+                                       {slug?.Technical?.quickLink && <p className="text-[#1A1A1A] text-[15px] ">
                                             Quick Links
-                                        </p>
+                                        </p>}
                                         <div className="w-full mt-[20px] justify-end">
                                             {slug?.Technical?.quickLink?.map(
                                                 (link, index) => (
@@ -234,11 +234,11 @@ function Overview({ slug }) {
                                 </div>
                                 <div className=" w-[38%]  relative  max-[1080px]:w-[35%]   max-[980px]:w-full">
                                     <div className=" right w-full  absolute top-[35px] max-[980px]:relative max-[640px]:relative max-[640px]:top-0 max-[980px]:w-full max-[640px]:w-full">
-                                        <p className="text-[#1A1A1A] text-[15px] ">
+                                        {slug?.faq?.quickLink && <p className="text-[#1A1A1A] text-[15px] ">
                                             Quick Links
-                                        </p>
+                                        </p>}
                                         <div className="w-full mt-[20px] justify-end">
-                                            {slug?.faq?.quickLink.map(
+                                            {slug?.faq?.quickLink?.map(
                                                 (link, index) => (
                                                     <QuickLink
                                                         link={link}

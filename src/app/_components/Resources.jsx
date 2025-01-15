@@ -64,7 +64,7 @@ function Resources() {
                                 <p className="text-[#1A1A1A] text-[15px]">
                                     {item.description}
                                 </p>
-                                <LinkArrow />
+                                <LinkArrow route={''} />
                             </div>
                         </div>
                     ))}

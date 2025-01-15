@@ -40,7 +40,7 @@ function Case() {
                                     {item?.description}
                                 </p>
 
-                                <LinkArrow index={index} />
+                                <LinkArrow route={`/use-cases/${index}`} />
                             </div>
                         </div>
                     ))}

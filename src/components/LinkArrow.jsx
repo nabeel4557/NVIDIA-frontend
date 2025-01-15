@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import { MdKeyboardArrowRight } from 'react-icons/md'
 
-export default function LinkArrow({index}) {
+export default function LinkArrow({route}) {
 
     const [hoverActive, setHoverActive] = useState(false)
   return (
@@ -10,7 +10,7 @@ export default function LinkArrow({index}) {
         onMouseLeave={()=>setHoverActive(false)}
         onMouseEnter={()=>setHoverActive(true)}
         
-        href={`use-cases/${index}`}
+        href={`${route}`}
                                     className=" text-black flex items-center text-[18px] font-bold absolute bottom-[30px] z-10 max-[1280px]:text-[16px] ">
                                     Learn More 
                                     <MdKeyboardArrowRight
