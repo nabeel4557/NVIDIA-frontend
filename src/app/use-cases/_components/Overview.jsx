@@ -114,7 +114,7 @@ function Overview({ slug }) {
                             </div>
                         )}
                         {activeTab == "Technical Implementation" && (
-                            <div className="flex  w-full gap-[100px] max-[980px]:block  max-[640px]:block">
+                            <div className="flex  w-full gap-[100px] max-[980px]:block  max-[1280px]:block">
                                 <div className="w-[60%] py-6 max-[1280px]:w-[100%] max-[640px]:w-[100%]">
                                     <>
                                         <h3 className="text-[36px] font-bold leading-10 max-[1280px]:text-[28px] max-[980px]:text-[24px]">
@@ -153,7 +153,7 @@ function Overview({ slug }) {
                                     </>
                                 </div>
                                 <div className=" w-[38%]  relative  max-[1080px]:w-[35%] max-[1280px]:w-[100%]  max-[640px]:w-full">
-                                    <div className=" right w-full  absolute top-[35px] max-[980px]:relative max-[640px]:relative max-[640px]:top-0  max-[540px]:w-[100%]">
+                                    <div className=" right w-full  absolute top-[35px] max-[1280px]:relative max-[640px]:relative max-[640px]:top-0  max-[540px]:w-[100%]">
                                        {slug?.Technical?.quickLink && <p className="text-[#1A1A1A] text-[15px] ">
                                             Quick Links
                                         </p>}
@@ -172,8 +172,8 @@ function Overview({ slug }) {
                             </div>
                         )}
                         {activeTab == "FAQ" && (
-                            <div className="flex  w-full gap-[100px] max-[980px]:block  max-[640px]:block">
-                                <div className="w-[60%] py-6  max-[980px]:w-full">
+                            <div className="flex  w-full gap-[100px] max-[1280px]:block  max-[640px]:block">
+                                <div className="w-[60%] py-6  max-[1280px]:w-full">
                                     {slug?.faq?.main.map((item, index) => (
                                         <div key={index} className="">
                                             <button
@@ -232,8 +232,8 @@ function Overview({ slug }) {
                                         </div>
                                     ))}
                                 </div>
-                                <div className=" w-[38%]  relative  max-[1080px]:w-[35%]   max-[980px]:w-full">
-                                    <div className=" right w-full  absolute top-[35px] max-[980px]:relative max-[640px]:relative max-[640px]:top-0 max-[980px]:w-full max-[640px]:w-full">
+                                <div className=" w-[38%]  relative  max-[1080px]:w-[35%]   max-[1280px]:w-full">
+                                    <div className=" right w-full  absolute top-[35px] max-[1280px]:relative max-[640px]:relative max-[640px]:top-0 max-[980px]:w-full max-[640px]:w-full">
                                         {slug?.faq?.quickLink && <p className="text-[#1A1A1A] text-[15px] ">
                                             Quick Links
                                         </p>}

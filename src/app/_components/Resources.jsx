@@ -47,7 +47,7 @@ function Resources() {
                     {cardItems.map((item, index) => (
                         <div
                             key={index}
-                            className="w-1/4 bg-[#fff] h-[580px] relative pb-[30px] shadow-lg max-[1080px]:w-[37%]  max-[980px]:w-[45%] max-[786px]:w-[39%] max-[640px]:w-[89%] max-[640px]:mx-auto max-[540px]:w-full">
+                            className="w-1/4 bg-[#fff]  h-[580px] relative pb-[30px] shadow-lg max-[1080px]:w-[37%]  max-[980px]:w-[45%] max-[786px]:w-[39%] max-[640px]:w-[89%] max-[640px]:mx-auto max-[540px]:w-full max-[640px]:mt-6">
                             <div className="">
                                 <img
                                     className="max-[640px]:w-full"
